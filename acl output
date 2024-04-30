@@ -1,0 +1,1893 @@
+tcs@01HW896031:~/POC2/PYATS/acl$ pyats run job acl_job.py --testbed-file testbed.yaml
+2024-04-30T17:54:24: %EASYPY-INFO: Starting job run: acl_job
+2024-04-30T17:54:24: %EASYPY-INFO: Runinfo directory: /home/tcs/.pyats/runinfo/acl_job.2024Apr30_17:54:23.978840
+2024-04-30T17:54:24: %EASYPY-INFO: --------------------------------------------------------------------------------
+2024-04-30T17:54:27: %EASYPY-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:54:27: %EASYPY-INFO: |                          Bringup/Clean Information                           |
+2024-04-30T17:54:27: %EASYPY-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:54:27: %EASYPY-INFO: {'bringup': {}, 'cleaners': {}, 'devices': {}}
+
+2024-04-30T17:54:27: %ATS-INFO: Checking all devices are up and ready is disabled, '--check-all-devices-up' must be set to True in case of pyats runs or '-check_all_devices_up' set to True in case of legacy easypy runs
+<module 'pyats.easypy.jobs.acl_job' from '/home/tcs/POC2/PYATS/acl/acl_job.py'>
+2024-04-30T17:54:27: %EASYPY-INFO: Starting task execution: Task-1
+2024-04-30T17:54:27: %EASYPY-INFO:     test harness = pyats.aetest
+2024-04-30T17:54:27: %EASYPY-INFO:     testscript   = /home/tcs/POC2/PYATS/acl/acl_testcases.py
+<module 'pyats.aetest.testscript.acl_testcases' from '/home/tcs/POC2/PYATS/acl/acl_testcases.py'>
+2024-04-30T17:54:27: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:54:27: %AETEST-INFO: |                            Starting common setup                             |
+2024-04-30T17:54:27: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:54:27: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:54:27: %AETEST-INFO: |                Starting subsection print_testbed_information                 |
+2024-04-30T17:54:27: %AETEST-INFO: +------------------------------------------------------------------------------+
+> /home/tcs/POC2/PYATS/acl/acl_testcases.py(22)print_testbed_information()
+-> uut1 = testbed.devices['dut1']
+(Pdb) c
+2024-04-30T17:54:31: %ROOT-INFO: Device name : n9k1 
+2024-04-30T17:54:31: %ROOT-INFO: Interface : Ethernet1/5
+2024-04-30T17:54:31: %ROOT-INFO: Link : uut1_uut3_1
+2024-04-30T17:54:31: %ROOT-INFO: Device name : n9k4 
+2024-04-30T17:54:31: %ROOT-INFO: Interface : Ethernet1/9
+2024-04-30T17:54:32: %ROOT-INFO: Link : uut2_uut3_1
+2024-04-30T17:54:32: %ROOT-INFO: Device name : n9k3 
+2024-04-30T17:54:32: %ROOT-INFO: Interface : Ethernet1/5
+2024-04-30T17:54:32: %ROOT-INFO: Link : uut3_uut1_1
+2024-04-30T17:54:32: %ROOT-INFO: Interface : Ethernet1/9
+2024-04-30T17:54:32: %ROOT-INFO: Link : uut3_uut2_1
+2024-04-30T17:54:32: %SCRIPT-INFO: Device and interfaces used for acl feature
+2024-04-30T17:54:32: %SCRIPT-INFO: {'n9k1': ['Ethernet1/5'], 'n9k4': ['Ethernet1/9'], 'n9k3': ['Ethernet1/5', 'Ethernet1/9']}
+2024-04-30T17:54:32: %AETEST-INFO: The result of subsection print_testbed_information is => PASSED
+2024-04-30T17:54:32: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:54:32: %AETEST-INFO: |                    Starting subsection connect_to_devices                    |
+2024-04-30T17:54:32: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:54:32: %SCRIPT-INFO: Connecting to devices
+
+2024-04-30 17:54:32,016: %UNICON-INFO: +++ n9k1 logfile /home/tcs/.pyats/runinfo/acl_job.2024Apr30_17:54:23.978840/n9k1-cli-1714479872.log +++
+
+2024-04-30 17:54:32,016: %UNICON-INFO: +++ Unicon plugin nxos (unicon.plugins.nxos) +++
+User Access Verification
+
+
+2024-04-30 17:54:32,395: %UNICON-INFO: +++ connection to spawn: ssh -l admin 10.133.35.148 -p 22, id: 140394423344720 +++
+
+2024-04-30 17:54:32,395: %UNICON-INFO: connection to n9k1
+Password: 
+
+Cisco Nexus Operating System (NX-OS) Software
+TAC support: http://www.cisco.com/tac
+Copyright (C) 2002-2024, Cisco and/or its affiliates.
+All rights reserved.
+The copyrights to certain works contained in this software are
+owned by other third parties and used and distributed under their own
+licenses, such as open source.  This software is provided "as is," and unless
+otherwise stated, there is no warranty, express or implied, including but not
+limited to warranties of merchantability and fitness for a particular purpose.
+Certain components of this software are licensed under
+the GNU General Public License (GPL) version 2.0 or 
+GNU General Public License (GPL) version 3.0  or the GNU
+Lesser General Public License (LGPL) Version 2.1 or 
+Lesser General Public License (LGPL) Version 2.0. 
+A copy of each such license is available at
+http://www.opensource.org/licenses/gpl-2.0.php and
+http://opensource.org/licenses/gpl-3.0.html and
+http://www.opensource.org/licenses/lgpl-2.1.php and
+http://www.gnu.org/licenses/old-licenses/library.txt.
+n9k1# 
+
+2024-04-30 17:54:32,938: %UNICON-INFO: +++ initializing handle +++
+
+2024-04-30 17:54:33,160: %UNICON-INFO: +++ n9k1 with via 'cli': executing command 'term length 0' +++
+term length 0
+n9k1# 
+
+2024-04-30 17:54:33,508: %UNICON-INFO: +++ n9k1 with via 'cli': executing command 'term width 511' +++
+term width 511
+n9k1# 
+
+2024-04-30 17:54:33,841: %UNICON-INFO: +++ n9k1 with via 'cli': executing command 'terminal session-timeout 0' +++
+terminal session-timeout 0
+n9k1# 
+
+2024-04-30 17:54:33,987: %UNICON-INFO: +++ n9k1(dut1) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k1(config)# no logging console
+n9k1(config)# line console
+n9k1(config-console)# exec-timeout 0
+n9k1(config-console)# line vty
+n9k1(config-line)# exec-timeout 0
+n9k1(config-line)# terminal width 511
+n9k1(config-line)# end
+n9k1# 
+2024-04-30T17:54:35: %ROOT-INFO: Successfully connected to device n9k1
+
+2024-04-30 17:54:35,454: %UNICON-INFO: +++ n9k1 with via 'cli': executing command 'show version' +++
+show version
+Cisco Nexus Operating System (NX-OS) Software
+TAC support: http://www.cisco.com/tac
+Copyright (C) 2002-2024, Cisco and/or its affiliates.
+All rights reserved.
+The copyrights to certain works contained in this software are
+owned by other third parties and used and distributed under their own
+licenses, such as open source.  This software is provided "as is," and unless
+otherwise stated, there is no warranty, express or implied, including but not
+limited to warranties of merchantability and fitness for a particular purpose.
+Certain components of this software are licensed under
+the GNU General Public License (GPL) version 2.0 or 
+GNU General Public License (GPL) version 3.0  or the GNU
+Lesser General Public License (LGPL) Version 2.1 or 
+Lesser General Public License (LGPL) Version 2.0. 
+A copy of each such license is available at
+http://www.opensource.org/licenses/gpl-2.0.php and
+http://opensource.org/licenses/gpl-3.0.html and
+http://www.opensource.org/licenses/lgpl-2.1.php and
+http://www.gnu.org/licenses/old-licenses/library.txt.
+
+Software
+  BIOS: version 07.17
+ NXOS: version 9.3(13)
+  BIOS compile time:  09/10/2014
+  NXOS image file is: bootflash:///nxos.9.3.13.bin
+  NXOS compile time:  1/31/2024 12:00:00 [12/13/2023 06:06:50]
+
+
+Hardware
+  cisco Nexus9000 C9396PX Chassis 
+  Intel(R) Core(TM) i3-3227U CPU @ 2.50GHz with 16399572 kB of memory.
+  Processor Board ID SAL1927J6P3
+
+  Device name: n9k1
+  bootflash:   21693714 kB
+Kernel uptime is 7 day(s), 5 hour(s), 28 minute(s), 40 second(s)
+
+Last reset at 500503 usecs after Tue Apr 23 05:36:10 2024
+  Reason: Reset Requested by CLI command reload
+  System version: 9.3(13)
+  Service: 
+
+plugin
+  Core Plugin, Ethernet Plugin
+
+Active Package(s):
+        
+n9k1# 
+2024-04-30T17:54:36: %ROOT-INFO: Software version : 9.3(13)
+2024-04-30T17:54:36: %ROOT-INFO: Image File :bootflash:///nxos.9.3.13.bin
+
+2024-04-30 17:54:36,615: %UNICON-INFO: +++ n9k3 logfile /home/tcs/.pyats/runinfo/acl_job.2024Apr30_17:54:23.978840/n9k3-cli-1714479876.log +++
+
+2024-04-30 17:54:36,615: %UNICON-INFO: +++ Unicon plugin nxos (unicon.plugins.nxos) +++
+User Access Verification
+
+
+2024-04-30 17:54:36,928: %UNICON-INFO: +++ connection to spawn: ssh -l admin 10.133.35.152 -p 22, id: 140394183380320 +++
+
+2024-04-30 17:54:36,929: %UNICON-INFO: connection to n9k3
+Password: 
+
+Cisco Nexus Operating System (NX-OS) Software
+TAC support: http://www.cisco.com/tac
+Copyright (C) 2002-2024, Cisco and/or its affiliates.
+All rights reserved.
+The copyrights to certain works contained in this software are
+owned by other third parties and used and distributed under their own
+licenses, such as open source.  This software is provided "as is," and unless
+otherwise stated, there is no warranty, express or implied, including but not
+limited to warranties of merchantability and fitness for a particular purpose.
+Certain components of this software are licensed under
+the GNU General Public License (GPL) version 2.0 or 
+GNU General Public License (GPL) version 3.0  or the GNU
+Lesser General Public License (LGPL) Version 2.1 or 
+Lesser General Public License (LGPL) Version 2.0. 
+A copy of each such license is available at
+http://www.opensource.org/licenses/gpl-2.0.php and
+http://opensource.org/licenses/gpl-3.0.html and
+http://www.opensource.org/licenses/lgpl-2.1.php and
+http://www.gnu.org/licenses/old-licenses/library.txt.
+n9k3# 
+
+2024-04-30 17:54:37,507: %UNICON-INFO: +++ initializing handle +++
+
+2024-04-30 17:54:37,698: %UNICON-INFO: +++ n9k3 with via 'cli': executing command 'term length 0' +++
+term length 0
+n9k3# 
+
+2024-04-30 17:54:38,022: %UNICON-INFO: +++ n9k3 with via 'cli': executing command 'term width 511' +++
+term width 511
+n9k3# 
+
+2024-04-30 17:54:38,337: %UNICON-INFO: +++ n9k3 with via 'cli': executing command 'terminal session-timeout 0' +++
+terminal session-timeout 0
+n9k3# 
+
+2024-04-30 17:54:38,484: %UNICON-INFO: +++ n9k3(dut3) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k3(config)# no logging console
+n9k3(config)# line console
+n9k3(config-console)# exec-timeout 0
+n9k3(config-console)# line vty
+n9k3(config-line)# exec-timeout 0
+n9k3(config-line)# terminal width 511
+n9k3(config-line)# end
+n9k3# 
+2024-04-30T17:54:39: %ROOT-INFO: Successfully connected to device n9k3
+
+2024-04-30 17:54:39,868: %UNICON-INFO: +++ n9k3 with via 'cli': executing command 'show version' +++
+show version
+Cisco Nexus Operating System (NX-OS) Software
+TAC support: http://www.cisco.com/tac
+Copyright (C) 2002-2024, Cisco and/or its affiliates.
+All rights reserved.
+The copyrights to certain works contained in this software are
+owned by other third parties and used and distributed under their own
+licenses, such as open source.  This software is provided "as is," and unless
+otherwise stated, there is no warranty, express or implied, including but not
+limited to warranties of merchantability and fitness for a particular purpose.
+Certain components of this software are licensed under
+the GNU General Public License (GPL) version 2.0 or 
+GNU General Public License (GPL) version 3.0  or the GNU
+Lesser General Public License (LGPL) Version 2.1 or 
+Lesser General Public License (LGPL) Version 2.0. 
+A copy of each such license is available at
+http://www.opensource.org/licenses/gpl-2.0.php and
+http://opensource.org/licenses/gpl-3.0.html and
+http://www.opensource.org/licenses/lgpl-2.1.php and
+http://www.gnu.org/licenses/old-licenses/library.txt.
+
+Software
+  BIOS: version 07.17
+ NXOS: version 9.3(13)
+  BIOS compile time:  09/10/2014
+  NXOS image file is: bootflash:///nxos.9.3.13.bin
+  NXOS compile time:  1/31/2024 12:00:00 [12/13/2023 06:06:50]
+
+
+Hardware
+  cisco Nexus9000 C9396PX Chassis 
+  Intel(R) Core(TM) i3-3227U CPU @ 2.50GHz with 16399572 kB of memory.
+  Processor Board ID SAL1911B602
+
+  Device name: n9k3
+  bootflash:    7906304 kB
+Kernel uptime is 7 day(s), 5 hour(s), 23 minute(s), 14 second(s)
+
+Last reset at 660276 usecs after Tue Apr 23 05:24:12 2024
+  Reason: Reset Requested by CLI command reload
+  System version: 9.3(13)
+  Service: 
+
+plugin
+  Core Plugin, Ethernet Plugin
+
+Active Package(s):
+        
+n9k3# 
+2024-04-30T17:54:41: %ROOT-INFO: Software version : 9.3(13)
+2024-04-30T17:54:41: %ROOT-INFO: Image File :bootflash:///nxos.9.3.13.bin
+
+2024-04-30 17:54:41,421: %UNICON-INFO: +++ n9k4 logfile /home/tcs/.pyats/runinfo/acl_job.2024Apr30_17:54:23.978840/n9k4-cli-1714479881.log +++
+
+2024-04-30 17:54:41,421: %UNICON-INFO: +++ Unicon plugin nxos (unicon.plugins.nxos) +++
+User Access Verification
+
+
+2024-04-30 17:54:41,723: %UNICON-INFO: +++ connection to spawn: ssh -l admin 10.133.35.143 -p 22, id: 140394183056592 +++
+
+2024-04-30 17:54:41,723: %UNICON-INFO: connection to n9k4
+Password: 
+
+Cisco Nexus Operating System (NX-OS) Software
+TAC support: http://www.cisco.com/tac
+Copyright (C) 2002-2024, Cisco and/or its affiliates.
+All rights reserved.
+The copyrights to certain works contained in this software are
+owned by other third parties and used and distributed under their own
+licenses, such as open source.  This software is provided "as is," and unless
+otherwise stated, there is no warranty, express or implied, including but not
+limited to warranties of merchantability and fitness for a particular purpose.
+Certain components of this software are licensed under
+the GNU General Public License (GPL) version 2.0 or 
+GNU General Public License (GPL) version 3.0  or the GNU
+Lesser General Public License (LGPL) Version 2.1 or 
+Lesser General Public License (LGPL) Version 2.0. 
+A copy of each such license is available at
+http://www.opensource.org/licenses/gpl-2.0.php and
+http://opensource.org/licenses/gpl-3.0.html and
+http://www.opensource.org/licenses/lgpl-2.1.php and
+http://www.gnu.org/licenses/old-licenses/library.txt.
+n9k4# 
+
+2024-04-30 17:54:42,235: %UNICON-INFO: +++ initializing handle +++
+
+2024-04-30 17:54:42,445: %UNICON-INFO: +++ n9k4 with via 'cli': executing command 'term length 0' +++
+term length 0
+n9k4# 
+
+2024-04-30 17:54:42,777: %UNICON-INFO: +++ n9k4 with via 'cli': executing command 'term width 511' +++
+term width 511
+n9k4# 
+
+2024-04-30 17:54:43,127: %UNICON-INFO: +++ n9k4 with via 'cli': executing command 'terminal session-timeout 0' +++
+terminal session-timeout 0
+n9k4# 
+
+2024-04-30 17:54:43,272: %UNICON-INFO: +++ n9k4(dut2) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k4(config)# no logging console
+n9k4(config)# line console
+n9k4(config-console)# exec-timeout 0
+n9k4(config-console)# line vty
+n9k4(config-line)# exec-timeout 0
+n9k4(config-line)# terminal width 511
+n9k4(config-line)# end
+n9k4# 
+2024-04-30T17:54:44: %ROOT-INFO: Successfully connected to device n9k4
+
+2024-04-30 17:54:44,690: %UNICON-INFO: +++ n9k4 with via 'cli': executing command 'show version' +++
+show version
+Cisco Nexus Operating System (NX-OS) Software
+TAC support: http://www.cisco.com/tac
+Copyright (C) 2002-2024, Cisco and/or its affiliates.
+All rights reserved.
+The copyrights to certain works contained in this software are
+owned by other third parties and used and distributed under their own
+licenses, such as open source.  This software is provided "as is," and unless
+otherwise stated, there is no warranty, express or implied, including but not
+limited to warranties of merchantability and fitness for a particular purpose.
+Certain components of this software are licensed under
+the GNU General Public License (GPL) version 2.0 or 
+GNU General Public License (GPL) version 3.0  or the GNU
+Lesser General Public License (LGPL) Version 2.1 or 
+Lesser General Public License (LGPL) Version 2.0. 
+A copy of each such license is available at
+http://www.opensource.org/licenses/gpl-2.0.php and
+http://opensource.org/licenses/gpl-3.0.html and
+http://www.opensource.org/licenses/lgpl-2.1.php and
+http://www.gnu.org/licenses/old-licenses/library.txt.
+
+Software
+  BIOS: version 07.17
+ NXOS: version 9.3(13)
+  BIOS compile time:  09/10/2014
+  NXOS image file is: bootflash:///nxos.9.3.13.bin
+  NXOS compile time:  1/31/2024 12:00:00 [12/13/2023 06:06:50]
+
+
+Hardware
+  cisco Nexus9000 C9396PX Chassis 
+  Intel(R) Core(TM) i3-3227U CPU @ 2.50GHz with 16399572 kB of memory.
+  Processor Board ID SAL18411YGQ
+
+  Device name: n9k4
+  bootflash:    7906304 kB
+Kernel uptime is 7 day(s), 5 hour(s), 59 minute(s), 50 second(s)
+
+Last reset at 620625 usecs after Tue Apr 23 04:45:00 2024
+  Reason: Reset Requested by CLI command reload
+  System version: 9.3(13)
+  Service: 
+
+plugin
+  Core Plugin, Ethernet Plugin
+
+Active Package(s):
+        
+n9k4# 
+2024-04-30T17:54:45: %ROOT-INFO: Software version : 9.3(13)
+2024-04-30T17:54:45: %ROOT-INFO: Image File :bootflash:///nxos.9.3.13.bin
+2024-04-30T17:54:45: %AETEST-INFO: The result of subsection connect_to_devices is => PASSED
+2024-04-30T17:54:45: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:54:45: %AETEST-INFO: |            Starting subsection configure_ip_address_to_interfaces            |
+2024-04-30T17:54:45: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:54:45: %SCRIPT-INFO: Assign ip address to interfaces
+> /home/tcs/POC2/PYATS/acl/acl_testcases.py(67)configure_ip_address_to_interfaces()
+-> logger.info(device_info.keys())
+(Pdb) c
+2024-04-30T17:55:07: %SCRIPT-INFO: dict_keys(['n9k1', 'n9k4', 'n9k3'])
+
+2024-04-30 17:55:07,550: %UNICON-INFO: +++ n9k1(dut1) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k1(config)# int ethernet1/5
+n9k1(config-if)#  no switchport
+n9k1(config-if)# ip address 192.168.60.1 255.255.255.0
+n9k1(config-if)#  no shut
+n9k1(config-if)#  end
+n9k1# 
+
+2024-04-30 17:55:11,289: %UNICON-INFO: +++ n9k3(dut3) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k3(config)# int ethernet1/5
+n9k3(config-if)#  no switchport
+n9k3(config-if)# ip address 192.168.60.2 255.255.255.0
+n9k3(config-if)#  no shut
+n9k3(config-if)#  end
+n9k3# 
+
+2024-04-30 17:55:14,937: %UNICON-INFO: +++ n9k3(dut3) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k3(config)# int ethernet1/9
+n9k3(config-if)#  no switchport
+n9k3(config-if)# ip address 192.168.11.1 255.255.255.0
+n9k3(config-if)#  no shut
+n9k3(config-if)#  end
+n9k3# 
+
+2024-04-30 17:55:18,593: %UNICON-INFO: +++ n9k4(dut2) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k4(config)# int ethernet1/9
+n9k4(config-if)#  no switchport
+n9k4(config-if)# ip address 192.168.11.2 255.255.255.0
+n9k4(config-if)#  no shut
+n9k4(config-if)#  end
+n9k4# 
+2024-04-30T17:55:22: %AETEST-INFO: The result of subsection configure_ip_address_to_interfaces is => PASSED
+2024-04-30T17:55:22: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:55:22: %AETEST-INFO: |                   Starting subsection enable_rip_on_device                   |
+2024-04-30T17:55:22: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:55:22: %ROOT-INFO: Enable rip on devices
+
+2024-04-30 17:55:22,344: %UNICON-INFO: +++ n9k1(dut1) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k1(config)# feature rip
+n9k1(config)#  end
+n9k1# 
+
+2024-04-30 17:55:25,849: %UNICON-INFO: +++ n9k3(dut3) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k3(config)# feature rip
+n9k3(config)#  end
+n9k3# 
+
+2024-04-30 17:55:29,344: %UNICON-INFO: +++ n9k4(dut2) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k4(config)# feature rip
+n9k4(config)#  end
+n9k4# 
+2024-04-30T17:55:32: %AETEST-INFO: The result of subsection enable_rip_on_device is => PASSED
+2024-04-30T17:55:32: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:55:32: %AETEST-INFO: |                 Starting subsection configure_rip_on_devices                 |
+2024-04-30T17:55:32: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:55:32: %SCRIPT-INFO: Configure rip on interfaces
+
+2024-04-30 17:55:32,819: %UNICON-INFO: +++ n9k1(dut1) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k1(config)# int ethernet1/5
+n9k1(config-if)#  router rip 2
+n9k1(config-router)#  end
+n9k1# 
+
+2024-04-30 17:55:37,573: %UNICON-INFO: +++ n9k3(dut3) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k3(config)# int ethernet1/5
+n9k3(config-if)#  router rip 2
+n9k3(config-router)#  end
+n9k3# 
+
+2024-04-30 17:55:42,102: %UNICON-INFO: +++ n9k3(dut3) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k3(config)# int ethernet1/9
+n9k3(config-if)#  router rip 2
+n9k3(config-router)#  end
+n9k3# 
+
+2024-04-30 17:55:45,648: %UNICON-INFO: +++ n9k4(dut2) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k4(config)# int ethernet1/9
+n9k4(config-if)#  router rip 2
+n9k4(config-router)#  end
+n9k4# 
+2024-04-30T17:55:50: %AETEST-INFO: The result of subsection configure_rip_on_devices is => PASSED
+2024-04-30T17:55:50: %AETEST-INFO: The result of common setup is => PASSED
+2024-04-30T17:55:50: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:55:50: %AETEST-INFO: |                    Starting testcase acl_testcase_permit                     |
+2024-04-30T17:55:50: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:55:50: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:55:50: %AETEST-INFO: |                   Starting section configure_acl_on_device                   |
+2024-04-30T17:55:50: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:55:50: %SCRIPT-INFO: Configure acl on device3:n9k3
+
+2024-04-30 17:55:50,367: %UNICON-INFO: +++ n9k3(dut3) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k3(config)# ip access-list acl123
+n9k3(config-acl)#  permit icmp 192.168.11.1/24 any
+n9k3(config-acl)# end
+n9k3# 
+2024-04-30T17:55:50: %SCRIPT-INFO: Configure acl in interface
+
+2024-04-30 17:55:50,976: %UNICON-INFO: +++ n9k3(dut3) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k3(config)# int ethernet1/5 
+n9k3(config-if)#  ip access-group acl123 in
+n9k3(config-if)# end
+n9k3# 
+2024-04-30T17:55:51: %AETEST-INFO: The result of section configure_acl_on_device is => PASSED
+2024-04-30T17:55:51: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:55:51: %AETEST-INFO: |                 Starting section check_ping_after_permit_acl                 |
+2024-04-30T17:55:51: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:55:51: %SCRIPT-INFO: Check acl configured or not 
+
+2024-04-30 17:55:51,692: %UNICON-INFO: +++ n9k3 with via 'cli': executing command 'show access-list acl123' +++
+show access-list acl123
+
+IP access list acl123
+        10 permit icmp 192.168.11.1/24 any 
+n9k3# 
+2024-04-30T17:55:51: %SCRIPT-INFO: 
+2024-04-30T17:55:51: %SCRIPT-INFO: IP access list acl123
+2024-04-30T17:55:51: %SCRIPT-INFO:         10 permit icmp 192.168.11.1/24 any
+2024-04-30T17:55:51: %SCRIPT-INFO: ACL configured on device
+2024-04-30T17:55:51: %SCRIPT-INFO: Ping the ip configured on device2: n9k4
+
+2024-04-30 17:55:52,073: %UNICON-INFO: +++ n9k3 with via 'cli': executing command 'ping 192.168.11.2' +++
+ping 192.168.11.2
+PING 192.168.11.2 (192.168.11.2): 56 data bytes
+36 bytes from 192.168.11.1: Destination Host Unreachable
+Request 0 timed out
+64 bytes from 192.168.11.2: icmp_seq=1 ttl=254 time=1.047 ms
+64 bytes from 192.168.11.2: icmp_seq=2 ttl=254 time=0.615 ms
+64 bytes from 192.168.11.2: icmp_seq=3 ttl=254 time=0.615 ms
+64 bytes from 192.168.11.2: icmp_seq=4 ttl=254 time=0.563 ms
+
+--- 192.168.11.2 ping statistics ---
+5 packets transmitted, 4 packets received, 20.00% packet loss
+round-trip min/avg/max = 0.563/0.71/1.047 ms
+n9k3# 
+
+2024-04-30 17:56:04,428: %UNICON-INFO: +++ n9k3 with via 'cli': executing command 'ping 192.168.11.2' +++
+ping 192.168.11.2
+PING 192.168.11.2 (192.168.11.2): 56 data bytes
+64 bytes from 192.168.11.2: icmp_seq=0 ttl=254 time=1.105 ms
+64 bytes from 192.168.11.2: icmp_seq=1 ttl=254 time=0.635 ms
+64 bytes from 192.168.11.2: icmp_seq=2 ttl=254 time=0.611 ms
+64 bytes from 192.168.11.2: icmp_seq=3 ttl=254 time=0.664 ms
+64 bytes from 192.168.11.2: icmp_seq=4 ttl=254 time=0.669 ms
+
+--- 192.168.11.2 ping statistics ---
+5 packets transmitted, 5 packets received, 0.00% packet loss
+round-trip min/avg/max = 0.611/0.736/1.105 ms
+n9k3# 
+
+2024-04-30 17:56:14,828: %UNICON-INFO: +++ n9k3 with via 'cli': executing command 'ping 192.168.11.2' +++
+ping 192.168.11.2
+PING 192.168.11.2 (192.168.11.2): 56 data bytes
+64 bytes from 192.168.11.2: icmp_seq=0 ttl=254 time=0.935 ms
+64 bytes from 192.168.11.2: icmp_seq=1 ttl=254 time=0.7 ms
+64 bytes from 192.168.11.2: icmp_seq=2 ttl=254 time=0.662 ms
+64 bytes from 192.168.11.2: icmp_seq=3 ttl=254 time=0.729 ms
+64 bytes from 192.168.11.2: icmp_seq=4 ttl=254 time=1.071 ms
+
+--- 192.168.11.2 ping statistics ---
+5 packets transmitted, 5 packets received, 0.00% packet loss
+round-trip min/avg/max = 0.662/0.819/1.071 ms
+n9k3# 
+
+2024-04-30 17:56:25,172: %UNICON-INFO: +++ n9k3 with via 'cli': executing command 'ping 192.168.11.2' +++
+ping 192.168.11.2
+PING 192.168.11.2 (192.168.11.2): 56 data bytes
+64 bytes from 192.168.11.2: icmp_seq=0 ttl=254 time=0.919 ms
+64 bytes from 192.168.11.2: icmp_seq=1 ttl=254 time=0.531 ms
+64 bytes from 192.168.11.2: icmp_seq=2 ttl=254 time=0.597 ms
+64 bytes from 192.168.11.2: icmp_seq=3 ttl=254 time=0.627 ms
+64 bytes from 192.168.11.2: icmp_seq=4 ttl=254 time=0.598 ms
+
+--- 192.168.11.2 ping statistics ---
+5 packets transmitted, 5 packets received, 0.00% packet loss
+round-trip min/avg/max = 0.531/0.654/0.919 ms
+n9k3# 
+
+2024-04-30 17:56:35,547: %UNICON-INFO: +++ n9k3 with via 'cli': executing command 'ping 192.168.11.2' +++
+ping 192.168.11.2
+PING 192.168.11.2 (192.168.11.2): 56 data bytes
+64 bytes from 192.168.11.2: icmp_seq=0 ttl=254 time=0.926 ms
+64 bytes from 192.168.11.2: icmp_seq=1 ttl=254 time=0.61 ms
+64 bytes from 192.168.11.2: icmp_seq=2 ttl=254 time=0.536 ms
+64 bytes from 192.168.11.2: icmp_seq=3 ttl=254 time=0.574 ms
+64 bytes from 192.168.11.2: icmp_seq=4 ttl=254 time=0.565 ms
+
+--- 192.168.11.2 ping statistics ---
+5 packets transmitted, 5 packets received, 0.00% packet loss
+round-trip min/avg/max = 0.536/0.642/0.926 ms
+n9k3# 
+2024-04-30T17:56:55: %SCRIPT-INFO: ++++++++++++++++++++++++++++
+2024-04-30T17:56:55: %SCRIPT-INFO: {'sent_pkt': '5', 'receive_pkt': '5', 'pkt_loss': '0.00%'}
+2024-04-30T17:56:55: %SCRIPT-INFO: ++++++++++++++++++++++++++++
+2024-04-30T17:56:55: %SCRIPT-INFO: Sent : 5 packets and received: 5 packets and packet loss: 0.00%
+2024-04-30T17:56:55: %AETEST-INFO: Passed reason: Success: After applied permit rule for acl, ping got successful
+2024-04-30T17:56:55: %AETEST-INFO: The result of section check_ping_after_permit_acl is => PASSED
+2024-04-30T17:56:55: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:56:55: %AETEST-INFO: |                  Starting section unconfigure_acl_on_device                  |
+2024-04-30T17:56:55: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:56:55: %SCRIPT-INFO: Unconfigure acl in interface
+
+2024-04-30 17:56:55,727: %UNICON-INFO: +++ n9k3(dut3) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k3(config)# int ethernet1/9 
+n9k3(config-if)#  no ip access-group acl123 in
+ERROR: Requested acl name  in delete do not match the configured value
+n9k3(config-if)# end
+n9k3# 
+2024-04-30T17:56:56: %SCRIPT-INFO: Unconfigure acl on device3:n9k3
+
+2024-04-30 17:56:56,317: %UNICON-INFO: +++ n9k3(dut3) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k3(config)# no ip access-list acl123
+n9k3(config)# end
+n9k3# 
+2024-04-30T17:56:56: %AETEST-INFO: The result of section unconfigure_acl_on_device is => PASSED
+2024-04-30T17:56:56: %AETEST-INFO: The result of testcase acl_testcase_permit is => PASSED
+2024-04-30T17:56:56: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:56:56: %AETEST-INFO: |                     Starting testcase acl_testcase_deny                      |
+2024-04-30T17:56:56: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:56:56: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:56:56: %AETEST-INFO: |                   Starting section configure_acl_on_device                   |
+2024-04-30T17:56:56: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:56:56: %SCRIPT-INFO: Configure acl on device1:n9k1
+
+2024-04-30 17:56:56,792: %UNICON-INFO: +++ n9k1(dut1) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k1(config)# ip access-list acl123
+n9k1(config-acl)#  deny icmp 192.168.11.1/24 any
+n9k1(config-acl)# end
+n9k1# 
+2024-04-30T17:56:57: %SCRIPT-INFO: Configure acl in interface
+
+2024-04-30 17:56:57,332: %UNICON-INFO: +++ n9k1(dut1) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k1(config)# int ethernet1/5 
+n9k1(config-if)#  ip access-group acl123 in
+n9k1(config-if)# end
+n9k1# 
+2024-04-30T17:56:57: %AETEST-INFO: The result of section configure_acl_on_device is => PASSED
+2024-04-30T17:56:57: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:56:57: %AETEST-INFO: |                  Starting section check_ping_after_deny_acl                  |
+2024-04-30T17:56:57: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:56:57: %SCRIPT-INFO: Check acl configured or not 
+
+2024-04-30 17:56:58,089: %UNICON-INFO: +++ n9k1 with via 'cli': executing command 'show access-list acl123' +++
+show access-list acl123
+
+IP access list acl123
+        10 deny icmp 192.168.11.1/24 any 
+n9k1# 
+2024-04-30T17:56:58: %SCRIPT-INFO: 
+2024-04-30T17:56:58: %SCRIPT-INFO: IP access list acl123
+2024-04-30T17:56:58: %SCRIPT-INFO:         10 deny icmp 192.168.11.1/24 any
+2024-04-30T17:56:58: %SCRIPT-INFO: ACL configured on device
+2024-04-30T17:56:58: %SCRIPT-INFO: Ping the ip configured on device2: n9k4
+
+2024-04-30 17:56:58,454: %UNICON-INFO: +++ n9k1 with via 'cli': executing command 'ping 192.168.11.2' +++
+ping 192.168.11.2
+PING 192.168.11.2 (192.168.11.2): 56 data bytes
+Request 0 timed out
+Request 1 timed out
+Request 2 timed out
+Request 3 timed out
+Request 4 timed out
+
+--- 192.168.11.2 ping statistics ---
+5 packets transmitted, 0 packets received, 100.00% packet loss
+n9k1# 
+
+2024-04-30 17:57:10,808: %UNICON-INFO: +++ n9k1 with via 'cli': executing command 'ping 192.168.11.2' +++
+ping 192.168.11.2
+PING 192.168.11.2 (192.168.11.2): 56 data bytes
+Request 0 timed out
+Request 1 timed out
+Request 2 timed out
+Request 3 timed out
+Request 4 timed out
+
+--- 192.168.11.2 ping statistics ---
+5 packets transmitted, 0 packets received, 100.00% packet loss
+n9k1# 
+
+2024-04-30 17:57:23,422: %UNICON-INFO: +++ n9k1 with via 'cli': executing command 'ping 192.168.11.2' +++
+ping 192.168.11.2
+PING 192.168.11.2 (192.168.11.2): 56 data bytes
+Request 0 timed out
+Request 1 timed out
+Request 2 timed out
+Request 3 timed out
+Request 4 timed out
+
+--- 192.168.11.2 ping statistics ---
+5 packets transmitted, 0 packets received, 100.00% packet loss
+n9k1# 
+2024-04-30T17:57:35: %SCRIPT-INFO: ++++++++++++++++++++++++++++
+2024-04-30T17:57:35: %SCRIPT-INFO: {'sent_pkt': '5', 'receive_pkt': '0', 'pkt_loss': '100.00%'}
+2024-04-30T17:57:35: %SCRIPT-INFO: ++++++++++++++++++++++++++++
+2024-04-30T17:57:35: %SCRIPT-INFO: Sent : 5 packets and received: 0 packets and packet loss: 100.00%
+2024-04-30T17:57:35: %AETEST-INFO: Passed reason: Success: After applied deny rule for acl ping got failed
+2024-04-30T17:57:35: %AETEST-INFO: The result of section check_ping_after_deny_acl is => PASSED
+2024-04-30T17:57:35: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:57:35: %AETEST-INFO: |                  Starting section unconfigure_acl_on_device                  |
+2024-04-30T17:57:35: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:57:35: %SCRIPT-INFO: Unconfigure acl in interface
+
+2024-04-30 17:57:35,575: %UNICON-INFO: +++ n9k1(dut1) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k1(config)# int ethernet1/5 
+n9k1(config-if)#  no ip access-group acl123 in
+n9k1(config-if)# end
+n9k1# 
+2024-04-30T17:57:36: %SCRIPT-INFO: Unconfigure acl on device3:n9k1
+
+2024-04-30 17:57:36,125: %UNICON-INFO: +++ n9k1(dut1) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k1(config)# no ip access-list acl123
+n9k1(config)# end
+n9k1# 
+2024-04-30T17:57:36: %AETEST-INFO: The result of section unconfigure_acl_on_device is => PASSED
+2024-04-30T17:57:36: %AETEST-INFO: The result of testcase acl_testcase_deny is => PASSED
+2024-04-30T17:57:36: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:57:36: %AETEST-INFO: |                Starting testcase acl_testcase_multiple_rules                 |
+2024-04-30T17:57:36: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:57:36: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:57:36: %AETEST-INFO: |                   Starting section configure_acl_on_device                   |
+2024-04-30T17:57:36: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:57:36: %SCRIPT-INFO: Configure acl on device1:n9k1
+
+2024-04-30 17:57:36,609: %UNICON-INFO: +++ n9k1(dut1) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k1(config)# ip access-list acl123
+n9k1(config-acl)#  permit icmp 192.168.60.1/24 any
+n9k1(config-acl)# end
+n9k1# 
+2024-04-30T17:57:37: %SCRIPT-INFO: Configure acl on device1:n9k1
+
+2024-04-30 17:57:37,109: %UNICON-INFO: +++ n9k1(dut1) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k1(config)# ip access-list acl123
+n9k1(config-acl)#  deny icmp 192.168.11.1/24 any
+n9k1(config-acl)# end
+n9k1# 
+2024-04-30T17:57:37: %SCRIPT-INFO: Configure acl in interface
+
+2024-04-30 17:57:37,639: %UNICON-INFO: +++ n9k1(dut1) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k1(config)# int ethernet1/5 
+n9k1(config-if)#  ip access-group acl123 in
+n9k1(config-if)# end
+n9k1# 
+2024-04-30T17:57:38: %AETEST-INFO: The result of section configure_acl_on_device is => PASSED
+2024-04-30T17:57:38: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:57:38: %AETEST-INFO: |             Starting section check_ping_after_multiple_acl_rules             |
+2024-04-30T17:57:38: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:57:38: %SCRIPT-INFO: Check acl configured or not 
+
+2024-04-30 17:57:38,430: %UNICON-INFO: +++ n9k1 with via 'cli': executing command 'show access-list acl123' +++
+show access-list acl123
+
+IP access list acl123
+        10 permit icmp 192.168.60.1/24 any 
+        20 deny icmp 192.168.11.1/24 any 
+n9k1# 
+2024-04-30T17:57:38: %SCRIPT-INFO: 
+2024-04-30T17:57:38: %SCRIPT-INFO: IP access list acl123
+2024-04-30T17:57:38: %SCRIPT-INFO:         10 permit icmp 192.168.60.1/24 any 
+2024-04-30T17:57:38: %SCRIPT-INFO:         20 deny icmp 192.168.11.1/24 any
+2024-04-30T17:57:38: %SCRIPT-INFO: ACL configured on device
+2024-04-30T17:57:38: %SCRIPT-INFO: Ping the ip configured on device3 and device1: n9k1 n9k4
+
+2024-04-30 17:57:38,815: %UNICON-INFO: +++ n9k1 with via 'cli': executing command 'ping 192.168.11.2' +++
+ping 192.168.11.2
+PING 192.168.11.2 (192.168.11.2): 56 data bytes
+Request 0 timed out
+Request 1 timed out
+Request 2 timed out
+Request 3 timed out
+Request 4 timed out
+
+--- 192.168.11.2 ping statistics ---
+5 packets transmitted, 0 packets received, 100.00% packet loss
+n9k1# 
+2024-04-30T17:57:50: %SCRIPT-INFO: ++++++++++++++++++++++++++++
+2024-04-30T17:57:50: %SCRIPT-INFO: {'sent_pkt': '5', 'receive_pkt': '0', 'pkt_loss': '100.00%'}
+2024-04-30T17:57:50: %SCRIPT-INFO: ++++++++++++++++++++++++++++
+
+2024-04-30 17:57:51,232: %UNICON-INFO: +++ n9k3 with via 'cli': executing command 'ping 192.168.60.1' +++
+ping 192.168.60.1
+PING 192.168.60.1 (192.168.60.1): 56 data bytes
+36 bytes from 192.168.60.2: Destination Host Unreachable
+Request 0 timed out
+64 bytes from 192.168.60.1: icmp_seq=1 ttl=254 time=3.526 ms
+64 bytes from 192.168.60.1: icmp_seq=2 ttl=254 time=2.806 ms
+64 bytes from 192.168.60.1: icmp_seq=3 ttl=254 time=0.988 ms
+64 bytes from 192.168.60.1: icmp_seq=4 ttl=254 time=0.945 ms
+
+--- 192.168.60.1 ping statistics ---
+5 packets transmitted, 4 packets received, 20.00% packet loss
+round-trip min/avg/max = 0.945/2.066/3.526 ms
+n9k3# 
+
+2024-04-30 17:57:53,600: %UNICON-INFO: +++ n9k3 with via 'cli': executing command 'ping 192.168.60.1' +++
+ping 192.168.60.1
+PING 192.168.60.1 (192.168.60.1): 56 data bytes
+64 bytes from 192.168.60.1: icmp_seq=0 ttl=254 time=1.008 ms
+64 bytes from 192.168.60.1: icmp_seq=1 ttl=254 time=0.572 ms
+64 bytes from 192.168.60.1: icmp_seq=2 ttl=254 time=0.609 ms
+64 bytes from 192.168.60.1: icmp_seq=3 ttl=254 time=0.63 ms
+64 bytes from 192.168.60.1: icmp_seq=4 ttl=254 time=0.672 ms
+
+--- 192.168.60.1 ping statistics ---
+5 packets transmitted, 5 packets received, 0.00% packet loss
+round-trip min/avg/max = 0.572/0.698/1.008 ms
+n9k3# 
+
+2024-04-30 17:57:53,940: %UNICON-INFO: +++ n9k3 with via 'cli': executing command 'ping 192.168.60.1' +++
+ping 192.168.60.1
+PING 192.168.60.1 (192.168.60.1): 56 data bytes
+64 bytes from 192.168.60.1: icmp_seq=0 ttl=254 time=0.953 ms
+64 bytes from 192.168.60.1: icmp_seq=1 ttl=254 time=0.633 ms
+64 bytes from 192.168.60.1: icmp_seq=2 ttl=254 time=0.542 ms
+64 bytes from 192.168.60.1: icmp_seq=3 ttl=254 time=0.566 ms
+64 bytes from 192.168.60.1: icmp_seq=4 ttl=254 time=0.586 ms
+
+--- 192.168.60.1 ping statistics ---
+5 packets transmitted, 5 packets received, 0.00% packet loss
+round-trip min/avg/max = 0.542/0.655/0.953 ms
+n9k3# 
+2024-04-30T17:57:54: %SCRIPT-INFO: ++++++++++++++++++++++++++++
+2024-04-30T17:57:54: %SCRIPT-INFO: {'sent_pkt': '5', 'receive_pkt': '5', 'pkt_loss': '0.00%'}
+2024-04-30T17:57:54: %SCRIPT-INFO: ++++++++++++++++++++++++++++
+2024-04-30T17:57:54: %AETEST-INFO: Passed reason: Success: After applied deny and permit rule for acl ping got failed for deny rule and got successful for permit rule
+2024-04-30T17:57:54: %AETEST-INFO: The result of section check_ping_after_multiple_acl_rules is => PASSED
+2024-04-30T17:57:54: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:57:54: %AETEST-INFO: |                  Starting section unconfigure_acl_on_device                  |
+2024-04-30T17:57:54: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:57:54: %SCRIPT-INFO: Unconfigure acl in interface
+
+2024-04-30 17:57:54,109: %UNICON-INFO: +++ n9k1(dut1) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k1(config)# int ethernet1/5 
+n9k1(config-if)#  no ip access-group acl123 in
+n9k1(config-if)# end
+n9k1# 
+2024-04-30T17:57:54: %SCRIPT-INFO: Unconfigure acl on device3:n9k1
+
+2024-04-30 17:57:54,664: %UNICON-INFO: +++ n9k1(dut1) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k1(config)# no ip access-list acl123
+n9k1(config)# end
+n9k1# 
+2024-04-30T17:57:55: %AETEST-INFO: The result of section unconfigure_acl_on_device is => PASSED
+2024-04-30T17:57:55: %AETEST-INFO: The result of testcase acl_testcase_multiple_rules is => PASSED
+2024-04-30T17:57:55: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:57:55: %AETEST-INFO: |                 Starting testcase acl_testcase_in_out_bound                  |
+2024-04-30T17:57:55: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:57:55: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:57:55: %AETEST-INFO: |                   Starting section configure_acl_on_device                   |
+2024-04-30T17:57:55: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:57:55: %SCRIPT-INFO: Configure acl on device3:n9k3
+
+2024-04-30 17:57:55,099: %UNICON-INFO: +++ n9k3(dut3) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k3(config)# ip access-list acl123
+n9k3(config-acl)#  permit icmp 192.168.11.1/24 any
+n9k3(config-acl)# end
+n9k3# 
+2024-04-30T17:57:55: %SCRIPT-INFO: Configure acl in interface
+
+2024-04-30 17:57:55,639: %UNICON-INFO: +++ n9k3(dut3) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k3(config)# int ethernet1/5 
+n9k3(config-if)#  ip access-group acl123 in
+n9k3(config-if)# end
+n9k3# 
+2024-04-30T17:57:56: %AETEST-INFO: The result of section configure_acl_on_device is => PASSED
+2024-04-30T17:57:56: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:57:56: %AETEST-INFO: |              Starting section check_ping_after_in_out_bound_acl              |
+2024-04-30T17:57:56: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:57:56: %SCRIPT-INFO: Check acl configured or not 
+
+2024-04-30 17:57:56,331: %UNICON-INFO: +++ n9k3 with via 'cli': executing command 'show access-list acl123' +++
+show access-list acl123
+
+IP access list acl123
+        10 permit icmp 192.168.11.1/24 any 
+n9k3# 
+2024-04-30T17:57:56: %SCRIPT-INFO: 
+2024-04-30T17:57:56: %SCRIPT-INFO: IP access list acl123
+2024-04-30T17:57:56: %SCRIPT-INFO:         10 permit icmp 192.168.11.1/24 any
+2024-04-30T17:57:56: %SCRIPT-INFO: ACL configured on device
+2024-04-30T17:57:56: %SCRIPT-INFO: Ping the ip configured on device2: n9k4 to check in bound
+
+2024-04-30 17:57:56,703: %UNICON-INFO: +++ n9k3 with via 'cli': executing command 'ping 192.168.11.2' +++
+ping 192.168.11.2
+PING 192.168.11.2 (192.168.11.2): 56 data bytes
+64 bytes from 192.168.11.2: icmp_seq=0 ttl=254 time=0.995 ms
+64 bytes from 192.168.11.2: icmp_seq=1 ttl=254 time=0.633 ms
+64 bytes from 192.168.11.2: icmp_seq=2 ttl=254 time=0.583 ms
+64 bytes from 192.168.11.2: icmp_seq=3 ttl=254 time=0.539 ms
+64 bytes from 192.168.11.2: icmp_seq=4 ttl=254 time=0.563 ms
+
+--- 192.168.11.2 ping statistics ---
+5 packets transmitted, 5 packets received, 0.00% packet loss
+round-trip min/avg/max = 0.539/0.662/0.995 ms
+n9k3# 
+
+2024-04-30 17:57:57,060: %UNICON-INFO: +++ n9k3 with via 'cli': executing command 'ping 192.168.11.2' +++
+ping 192.168.11.2
+PING 192.168.11.2 (192.168.11.2): 56 data bytes
+64 bytes from 192.168.11.2: icmp_seq=0 ttl=254 time=0.946 ms
+64 bytes from 192.168.11.2: icmp_seq=1 ttl=254 time=0.642 ms
+64 bytes from 192.168.11.2: icmp_seq=2 ttl=254 time=0.632 ms
+64 bytes from 192.168.11.2: icmp_seq=3 ttl=254 time=0.584 ms
+64 bytes from 192.168.11.2: icmp_seq=4 ttl=254 time=0.536 ms
+
+--- 192.168.11.2 ping statistics ---
+5 packets transmitted, 5 packets received, 0.00% packet loss
+round-trip min/avg/max = 0.536/0.667/0.946 ms
+n9k3# 
+
+2024-04-30 17:57:57,409: %UNICON-INFO: +++ n9k3 with via 'cli': executing command 'ping 192.168.11.2' +++
+ping 192.168.11.2
+PING 192.168.11.2 (192.168.11.2): 56 data bytes
+64 bytes from 192.168.11.2: icmp_seq=0 ttl=254 time=1.18 ms
+64 bytes from 192.168.11.2: icmp_seq=1 ttl=254 time=0.752 ms
+64 bytes from 192.168.11.2: icmp_seq=2 ttl=254 time=0.85 ms
+64 bytes from 192.168.11.2: icmp_seq=3 ttl=254 time=1.003 ms
+64 bytes from 192.168.11.2: icmp_seq=4 ttl=254 time=0.615 ms
+
+--- 192.168.11.2 ping statistics ---
+5 packets transmitted, 5 packets received, 0.00% packet loss
+round-trip min/avg/max = 0.615/0.88/1.18 ms
+n9k3# 
+2024-04-30T17:57:57: %SCRIPT-INFO: ++++++++++++++++++++++++++++
+2024-04-30T17:57:57: %SCRIPT-INFO: {'sent_pkt': '5', 'receive_pkt': '5', 'pkt_loss': '0.00%'}
+2024-04-30T17:57:57: %SCRIPT-INFO: ++++++++++++++++++++++++++++
+2024-04-30T17:57:57: %SCRIPT-INFO: Unconfigure in bound acl in interface
+
+2024-04-30 17:57:57,566: %UNICON-INFO: +++ n9k3(dut3) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k3(config)# int ethernet1/9 
+n9k3(config-if)#  no ip access-group acl123 in
+ERROR: Requested acl name  in delete do not match the configured value
+n9k3(config-if)# end
+n9k3# 
+2024-04-30T17:57:58: %SCRIPT-INFO: Configure out bound acl in interface
+
+2024-04-30 17:57:58,083: %UNICON-INFO: +++ n9k3(dut3) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k3(config)# int ethernet1/9 
+n9k3(config-if)#  ip access-group acl123 out
+n9k3(config-if)# end
+n9k3# 
+2024-04-30T17:57:58: %SCRIPT-INFO: Ping the ip configured on device2: n9k4
+
+2024-04-30 17:57:58,873: %UNICON-INFO: +++ n9k3 with via 'cli': executing command 'ping 192.168.60.2' +++
+ping 192.168.60.2
+PING 192.168.60.2 (192.168.60.2): 56 data bytes
+64 bytes from 192.168.60.2: icmp_seq=0 ttl=255 time=0.494 ms
+64 bytes from 192.168.60.2: icmp_seq=1 ttl=255 time=0.265 ms
+64 bytes from 192.168.60.2: icmp_seq=2 ttl=255 time=0.258 ms
+64 bytes from 192.168.60.2: icmp_seq=3 ttl=255 time=0.324 ms
+64 bytes from 192.168.60.2: icmp_seq=4 ttl=255 time=0.252 ms
+
+--- 192.168.60.2 ping statistics ---
+5 packets transmitted, 5 packets received, 0.00% packet loss
+round-trip min/avg/max = 0.252/0.318/0.494 ms
+n9k3# 
+
+2024-04-30 17:57:59,197: %UNICON-INFO: +++ n9k3 with via 'cli': executing command 'ping 192.168.60.2' +++
+ping 192.168.60.2
+PING 192.168.60.2 (192.168.60.2): 56 data bytes
+64 bytes from 192.168.60.2: icmp_seq=0 ttl=255 time=0.365 ms
+64 bytes from 192.168.60.2: icmp_seq=1 ttl=255 time=0.308 ms
+64 bytes from 192.168.60.2: icmp_seq=2 ttl=255 time=0.279 ms
+64 bytes from 192.168.60.2: icmp_seq=3 ttl=255 time=0.302 ms
+64 bytes from 192.168.60.2: icmp_seq=4 ttl=255 time=0.255 ms
+
+--- 192.168.60.2 ping statistics ---
+5 packets transmitted, 5 packets received, 0.00% packet loss
+round-trip min/avg/max = 0.255/0.301/0.365 ms
+n9k3# 
+
+2024-04-30 17:57:59,538: %UNICON-INFO: +++ n9k3 with via 'cli': executing command 'ping 192.168.60.2' +++
+ping 192.168.60.2
+PING 192.168.60.2 (192.168.60.2): 56 data bytes
+64 bytes from 192.168.60.2: icmp_seq=0 ttl=255 time=0.501 ms
+64 bytes from 192.168.60.2: icmp_seq=1 ttl=255 time=0.298 ms
+64 bytes from 192.168.60.2: icmp_seq=2 ttl=255 time=0.414 ms
+64 bytes from 192.168.60.2: icmp_seq=3 ttl=255 time=0.333 ms
+64 bytes from 192.168.60.2: icmp_seq=4 ttl=255 time=0.336 ms
+
+--- 192.168.60.2 ping statistics ---
+5 packets transmitted, 5 packets received, 0.00% packet loss
+round-trip min/avg/max = 0.298/0.376/0.501 ms
+n9k3# 
+2024-04-30T17:57:59: %SCRIPT-INFO: ++++++++++++++++++++++++++++
+2024-04-30T17:57:59: %SCRIPT-INFO: {'sent_pkt': '5', 'receive_pkt': '5', 'pkt_loss': '0.00%'}
+2024-04-30T17:57:59: %SCRIPT-INFO: ++++++++++++++++++++++++++++
+2024-04-30T17:57:59: %AETEST-INFO: Passed reason: Success: in and out bound working successfully
+2024-04-30T17:57:59: %AETEST-INFO: The result of section check_ping_after_in_out_bound_acl is => PASSED
+2024-04-30T17:57:59: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:57:59: %AETEST-INFO: |                  Starting section unconfigure_acl_on_device                  |
+2024-04-30T17:57:59: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:57:59: %SCRIPT-INFO: Unconfigure acl in interface
+
+2024-04-30 17:57:59,690: %UNICON-INFO: +++ n9k3(dut3) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k3(config)# int ethernet1/9 
+n9k3(config-if)#  no ip access-group acl123 out
+n9k3(config-if)# end
+n9k3# 
+2024-04-30T17:58:00: %SCRIPT-INFO: Unconfigure acl on device3:n9k3
+
+2024-04-30 17:58:00,204: %UNICON-INFO: +++ n9k3(dut3) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k3(config)# no ip access-list acl123
+n9k3(config)# end
+n9k3# 
+2024-04-30T17:58:00: %AETEST-INFO: The result of section unconfigure_acl_on_device is => PASSED
+2024-04-30T17:58:00: %AETEST-INFO: The result of testcase acl_testcase_in_out_bound is => PASSED
+2024-04-30T17:58:00: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:58:00: %AETEST-INFO: |                  Starting testcase acl_testcase_configured                   |
+2024-04-30T17:58:00: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:58:00: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:58:00: %AETEST-INFO: |                   Starting section configure_acl_on_device                   |
+2024-04-30T17:58:00: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:58:00: %SCRIPT-INFO: Configure acl on device1:n9k1
+
+2024-04-30 17:58:00,661: %UNICON-INFO: +++ n9k1(dut1) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k1(config)# ip access-list acl123
+n9k1(config-acl)#  deny icmp 192.168.11.1/24 any
+n9k1(config-acl)# end
+n9k1# 
+2024-04-30T17:58:01: %AETEST-INFO: The result of section configure_acl_on_device is => PASSED
+2024-04-30T17:58:01: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:58:01: %AETEST-INFO: |                    Starting section check_acl_configured                     |
+2024-04-30T17:58:01: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:58:01: %SCRIPT-INFO: Check acl configured or not 
+
+2024-04-30 17:58:01,387: %UNICON-INFO: +++ n9k1 with via 'cli': executing command 'show access-list acl123' +++
+show access-list acl123
+
+IP access list acl123
+        10 deny icmp 192.168.11.1/24 any 
+n9k1# 
+2024-04-30T17:58:01: %SCRIPT-INFO: 
+2024-04-30T17:58:01: %SCRIPT-INFO: IP access list acl123
+2024-04-30T17:58:01: %SCRIPT-INFO:         10 deny icmp 192.168.11.1/24 any
+2024-04-30T17:58:01: %SCRIPT-INFO: acl configured
+2024-04-30T17:58:01: %AETEST-INFO: Passed reason: Success: acl is configured on device and on interface successfully
+2024-04-30T17:58:01: %AETEST-INFO: The result of section check_acl_configured is => PASSED
+2024-04-30T17:58:01: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:58:01: %AETEST-INFO: |                  Starting section unconfigure_acl_on_device                  |
+2024-04-30T17:58:01: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:58:01: %SCRIPT-INFO: Unconfigure acl on device3:n9k1
+
+2024-04-30 17:58:01,573: %UNICON-INFO: +++ n9k1(dut1) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k1(config)# no ip access-list acl123
+n9k1(config)# end
+n9k1# 
+2024-04-30T17:58:02: %AETEST-INFO: The result of section unconfigure_acl_on_device is => PASSED
+2024-04-30T17:58:02: %AETEST-INFO: The result of testcase acl_testcase_configured is => PASSED
+2024-04-30T17:58:02: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:58:02: %AETEST-INFO: |                Starting testcase acl_testcase_not_configured                 |
+2024-04-30T17:58:02: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:58:02: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:58:02: %AETEST-INFO: |                  Starting section check_acl__not_configured                  |
+2024-04-30T17:58:02: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:58:02: %SCRIPT-INFO: Check acl not configured on device
+
+2024-04-30 17:58:02,408: %UNICON-INFO: +++ n9k1 with via 'cli': executing command 'show access-list' +++
+show access-list
+
+IP access list copp-system-p-acl-auto-rp
+        10 permit ip any 224.0.1.39/32 
+        20 permit ip any 224.0.1.40/32 
+IP access list copp-system-p-acl-bgp
+        10 permit tcp any gt 1023 any eq bgp 
+        20 permit tcp any eq bgp any gt 1023 
+IPv6 access list copp-system-p-acl-bgp6
+        10 permit tcp any gt 1023 any eq bgp 
+        20 permit tcp any eq bgp any gt 1023 
+IP access list copp-system-p-acl-dhcp
+        10 permit udp any eq bootpc any 
+        20 permit udp any neq bootps any eq bootps 
+IP access list copp-system-p-acl-dhcp-relay-response
+        10 permit udp any eq bootps any 
+        20 permit udp any any eq bootpc 
+IPv6 access list copp-system-p-acl-dhcp6
+        10 permit udp any eq 546 any 
+        20 permit udp any any eq 547 
+IPv6 access list copp-system-p-acl-dhcp6-relay-response
+        10 permit udp any eq 547 any 
+        20 permit udp any any eq 546 
+IP access list copp-system-p-acl-eigrp
+        10 permit eigrp any any 
+IPv6 access list copp-system-p-acl-eigrp6
+        10 permit eigrp any any 
+IP access list copp-system-p-acl-ftp
+        10 permit tcp any any eq ftp-data 
+        20 permit tcp any any eq ftp 
+        30 permit tcp any eq ftp-data any 
+        40 permit tcp any eq ftp any 
+IP access list copp-system-p-acl-hsrp
+        10 permit udp any 224.0.0.0/24 eq 1985 
+IPv6 access list copp-system-p-acl-hsrp6
+        10 permit udp any ff02::66/128 eq 2029 
+IP access list copp-system-p-acl-http
+        10 permit tcp any eq www any 
+        20 permit tcp any any eq www 
+IP access list copp-system-p-acl-https
+        10 permit tcp any eq 443 any 
+        20 permit tcp any any eq 443 
+IP access list copp-system-p-acl-icmp
+        10 permit icmp any any echo 
+        20 permit icmp any any echo-reply 
+IPv6 access list copp-system-p-acl-icmp6
+        10 permit icmp any any echo-request 
+        20 permit icmp any any echo-reply 
+IP access list copp-system-p-acl-igmp
+        10 permit igmp any 224.0.0.0/3 
+MAC access list copp-system-p-acl-mac-cdp-udld-vtp
+        10 permit any 0100.0ccc.cccc 0000.0000.0000 
+MAC access list copp-system-p-acl-mac-cfsoe
+        10 permit any 0180.c200.000e 0000.0000.0000 0x8843 
+        20 permit any 0180.c200.000e 0000.0000.0000 
+MAC access list copp-system-p-acl-mac-dot1x
+        10 permit any 0180.c200.0003 0000.0000.0000 0x888e 
+MAC access list copp-system-p-acl-mac-fcoe
+        10 permit any any 0x8906 
+        20 permit any any 0x8914 
+MAC access list copp-system-p-acl-mac-l2-tunnel
+        10 permit any any 0x8840 
+MAC access list copp-system-p-acl-mac-l3-isis
+        10 permit any 0180.c200.0015 0000.0000.0000 
+        20 permit any 0180.c200.0014 0000.0000.0000 
+        30 permit any 0900.2b00.0005 0000.0000.0000 
+        40 permit any 0900.2b00.0004 0000.0000.0000 
+MAC access list copp-system-p-acl-mac-lacp
+        10 permit any 0180.c200.0002 0000.0000.0000 0x8809 
+MAC access list copp-system-p-acl-mac-lldp
+        10 permit any 0180.c200.000e 0000.0000.0000 0x88cc 
+MAC access list copp-system-p-acl-mac-sdp-srp
+        10 permit any 0180.c200.000e 0000.0000.0000 0x3401 
+MAC access list copp-system-p-acl-mac-stp
+        10 permit any 0100.0ccc.cccd 0000.0000.0000 
+        20 permit any 0180.c200.0000 0000.0000.0000 
+MAC access list copp-system-p-acl-mac-undesirable
+        10 permit any any 
+IPv6 access list copp-system-p-acl-mld
+        10 permit icmp any any mld-query 
+        20 permit icmp any any mld-report 
+        30 permit icmp any any mld-reduction 
+        40 permit icmp any any mldv2 
+IP access list copp-system-p-acl-msdp
+        10 permit tcp any gt 1023 any eq 639 
+        20 permit tcp any eq 639 any gt 1023 
+IPv6 access list copp-system-p-acl-ndp
+        10 permit icmp any any router-solicitation 
+        20 permit icmp any any router-advertisement 
+        30 permit icmp any any nd-ns 
+        40 permit icmp any any nd-na 
+IP access list copp-system-p-acl-ntp
+        10 permit udp any any eq ntp 
+        20 permit udp any eq ntp any 
+IPv6 access list copp-system-p-acl-ntp6
+        10 permit udp any any eq ntp 
+        20 permit udp any eq ntp any 
+IP access list copp-system-p-acl-openflow
+        10 permit tcp any eq 6653 any 
+IP access list copp-system-p-acl-ospf
+        10 permit ospf any any 
+IPv6 access list copp-system-p-acl-ospf6
+        10 permit 89 any any 
+IP access list copp-system-p-acl-pim
+        10 permit pim any 224.0.0.0/24 
+        20 permit udp any any eq pim-auto-rp 
+        30 permit ip any 224.0.0.13/32 
+IP access list copp-system-p-acl-pim-mdt-join
+        10 permit udp any 224.0.0.13/32 
+IP access list copp-system-p-acl-pim-reg
+        10 permit pim any any 
+IPv6 access list copp-system-p-acl-pim6
+        10 permit pim any ff02::d/128 
+        20 permit udp any any eq pim-auto-rp 
+IPv6 access list copp-system-p-acl-pim6-reg
+        10 permit pim any any 
+IP access list copp-system-p-acl-ptp
+        10 permit udp any 224.0.1.129/32 eq 319 
+        20 permit udp any 224.0.1.129/32 eq 320 
+MAC access list copp-system-p-acl-ptp-l2
+        10 permit any any 0x88f7 
+IP access list copp-system-p-acl-ptp-uc
+        10 permit udp any any eq 319 
+        20 permit udp any any eq 320 
+IP access list copp-system-p-acl-radius
+        10 permit udp any any eq 1812 
+        20 permit udp any any eq 1813 
+        30 permit udp any any eq 1645 
+        40 permit udp any any eq 1646 
+        50 permit udp any eq 1812 any 
+        60 permit udp any eq 1813 any 
+        70 permit udp any eq 1645 any 
+        80 permit udp any eq 1646 any 
+IPv6 access list copp-system-p-acl-radius6
+        10 permit udp any any eq 1812 
+        20 permit udp any any eq 1813 
+        30 permit udp any any eq 1645 
+        40 permit udp any any eq 1646 
+        50 permit udp any eq 1812 any 
+        60 permit udp any eq 1813 any 
+        70 permit udp any eq 1645 any 
+        80 permit udp any eq 1646 any 
+IP access list copp-system-p-acl-rip
+        10 permit udp any 224.0.0.0/24 eq rip 
+IPv6 access list copp-system-p-acl-rip6
+        10 permit udp any ff02::9/64 eq 521 
+IP access list copp-system-p-acl-sftp
+        10 permit tcp any any eq 115 
+        20 permit tcp any eq 115 any 
+IP access list copp-system-p-acl-snmp
+        10 permit udp any any eq snmp 
+        20 permit udp any any eq snmptrap 
+        30 permit tcp any any eq 161 
+        40 permit tcp any any eq 162 
+IPv6 access list copp-system-p-acl-snmp6
+        10 permit udp any any eq snmp 
+        20 permit udp any any eq snmptrap 
+        30 permit tcp any any eq 161 
+        40 permit tcp any any eq 162 
+IP access list copp-system-p-acl-ssh
+        10 permit tcp any any eq 22 
+        20 permit tcp any eq 22 any 
+IPv6 access list copp-system-p-acl-ssh6
+        10 permit tcp any any eq 22 
+        20 permit tcp any eq 22 any 
+IP access list copp-system-p-acl-tacacs
+        10 permit tcp any any eq tacacs 
+        20 permit tcp any eq tacacs any 
+IPv6 access list copp-system-p-acl-tacacs6
+        10 permit tcp any any eq tacacs 
+        20 permit tcp any eq tacacs any 
+IP access list copp-system-p-acl-telnet
+        10 permit tcp any any eq telnet 
+        20 permit tcp any any eq 107 
+        30 permit tcp any eq telnet any 
+        40 permit tcp any eq 107 any 
+IPv6 access list copp-system-p-acl-telnet6
+        10 permit tcp any any eq telnet 
+        20 permit tcp any any eq 107 
+        30 permit tcp any eq telnet any 
+        40 permit tcp any eq 107 any 
+IP access list copp-system-p-acl-tftp
+        10 permit udp any any eq tftp 
+        20 permit udp any any eq 1758 
+        30 permit udp any eq tftp any 
+        40 permit udp any eq 1758 any 
+IPv6 access list copp-system-p-acl-tftp6
+        10 permit udp any any eq tftp 
+        20 permit udp any any eq 1758 
+        30 permit udp any eq tftp any 
+        40 permit udp any eq 1758 any 
+IP access list copp-system-p-acl-traceroute
+        10 permit icmp any any ttl-exceeded 
+        20 permit icmp any any port-unreachable 
+        30 permit udp any any range 33434 33534 
+IP access list copp-system-p-acl-undesirable
+        10 permit udp any any eq 1434 
+IP access list copp-system-p-acl-vpc
+        10 permit udp any any eq 3200 
+IP access list copp-system-p-acl-vrrp
+        10 permit ip any 224.0.0.18/32 
+IPv6 access list copp-system-p-acl-vrrp6
+        10 permit ipv6 any ff02::12/128 
+n9k1# 
+2024-04-30T17:58:02: %SCRIPT-INFO: 
+2024-04-30T17:58:02: %SCRIPT-INFO: IP access list copp-system-p-acl-auto-rp
+2024-04-30T17:58:02: %SCRIPT-INFO:         10 permit ip any 224.0.1.39/32 
+2024-04-30T17:58:02: %SCRIPT-INFO:         20 permit ip any 224.0.1.40/32 
+2024-04-30T17:58:02: %SCRIPT-INFO: IP access list copp-system-p-acl-bgp
+2024-04-30T17:58:02: %SCRIPT-INFO:         10 permit tcp any gt 1023 any eq bgp 
+2024-04-30T17:58:02: %SCRIPT-INFO:         20 permit tcp any eq bgp any gt 1023 
+2024-04-30T17:58:02: %SCRIPT-INFO: IPv6 access list copp-system-p-acl-bgp6
+2024-04-30T17:58:02: %SCRIPT-INFO:         10 permit tcp any gt 1023 any eq bgp 
+2024-04-30T17:58:02: %SCRIPT-INFO:         20 permit tcp any eq bgp any gt 1023 
+2024-04-30T17:58:02: %SCRIPT-INFO: IP access list copp-system-p-acl-dhcp
+2024-04-30T17:58:02: %SCRIPT-INFO:         10 permit udp any eq bootpc any 
+2024-04-30T17:58:02: %SCRIPT-INFO:         20 permit udp any neq bootps any eq bootps 
+2024-04-30T17:58:02: %SCRIPT-INFO: IP access list copp-system-p-acl-dhcp-relay-response
+2024-04-30T17:58:02: %SCRIPT-INFO:         10 permit udp any eq bootps any 
+2024-04-30T17:58:02: %SCRIPT-INFO:         20 permit udp any any eq bootpc 
+2024-04-30T17:58:02: %SCRIPT-INFO: IPv6 access list copp-system-p-acl-dhcp6
+2024-04-30T17:58:02: %SCRIPT-INFO:         10 permit udp any eq 546 any 
+2024-04-30T17:58:02: %SCRIPT-INFO:         20 permit udp any any eq 547 
+2024-04-30T17:58:02: %SCRIPT-INFO: IPv6 access list copp-system-p-acl-dhcp6-relay-response
+2024-04-30T17:58:02: %SCRIPT-INFO:         10 permit udp any eq 547 any 
+2024-04-30T17:58:02: %SCRIPT-INFO:         20 permit udp any any eq 546 
+2024-04-30T17:58:02: %SCRIPT-INFO: IP access list copp-system-p-acl-eigrp
+2024-04-30T17:58:02: %SCRIPT-INFO:         10 permit eigrp any any 
+2024-04-30T17:58:02: %SCRIPT-INFO: IPv6 access list copp-system-p-acl-eigrp6
+2024-04-30T17:58:02: %SCRIPT-INFO:         10 permit eigrp any any 
+2024-04-30T17:58:02: %SCRIPT-INFO: IP access list copp-system-p-acl-ftp
+2024-04-30T17:58:02: %SCRIPT-INFO:         10 permit tcp any any eq ftp-data 
+2024-04-30T17:58:02: %SCRIPT-INFO:         20 permit tcp any any eq ftp 
+2024-04-30T17:58:02: %SCRIPT-INFO:         30 permit tcp any eq ftp-data any 
+2024-04-30T17:58:02: %SCRIPT-INFO:         40 permit tcp any eq ftp any 
+2024-04-30T17:58:02: %SCRIPT-INFO: IP access list copp-system-p-acl-hsrp
+2024-04-30T17:58:02: %SCRIPT-INFO:         10 permit udp any 224.0.0.0/24 eq 1985 
+2024-04-30T17:58:02: %SCRIPT-INFO: IPv6 access list copp-system-p-acl-hsrp6
+2024-04-30T17:58:02: %SCRIPT-INFO:         10 permit udp any ff02::66/128 eq 2029 
+2024-04-30T17:58:02: %SCRIPT-INFO: IP access list copp-system-p-acl-http
+2024-04-30T17:58:02: %SCRIPT-INFO:         10 permit tcp any eq www any 
+2024-04-30T17:58:02: %SCRIPT-INFO:         20 permit tcp any any eq www 
+2024-04-30T17:58:02: %SCRIPT-INFO: IP access list copp-system-p-acl-https
+2024-04-30T17:58:02: %SCRIPT-INFO:         10 permit tcp any eq 443 any 
+2024-04-30T17:58:02: %SCRIPT-INFO:         20 permit tcp any any eq 443 
+2024-04-30T17:58:02: %SCRIPT-INFO: IP access list copp-system-p-acl-icmp
+2024-04-30T17:58:02: %SCRIPT-INFO:         10 permit icmp any any echo 
+2024-04-30T17:58:02: %SCRIPT-INFO:         20 permit icmp any any echo-reply 
+2024-04-30T17:58:02: %SCRIPT-INFO: IPv6 access list copp-system-p-acl-icmp6
+2024-04-30T17:58:02: %SCRIPT-INFO:         10 permit icmp any any echo-request 
+2024-04-30T17:58:02: %SCRIPT-INFO:         20 permit icmp any any echo-reply 
+2024-04-30T17:58:02: %SCRIPT-INFO: IP access list copp-system-p-acl-igmp
+2024-04-30T17:58:02: %SCRIPT-INFO:         10 permit igmp any 224.0.0.0/3 
+2024-04-30T17:58:02: %SCRIPT-INFO: MAC access list copp-system-p-acl-mac-cdp-udld-vtp
+2024-04-30T17:58:02: %SCRIPT-INFO:         10 permit any 0100.0ccc.cccc 0000.0000.0000 
+2024-04-30T17:58:02: %SCRIPT-INFO: MAC access list copp-system-p-acl-mac-cfsoe
+2024-04-30T17:58:02: %SCRIPT-INFO:         10 permit any 0180.c200.000e 0000.0000.0000 0x8843 
+2024-04-30T17:58:02: %SCRIPT-INFO:         20 permit any 0180.c200.000e 0000.0000.0000 
+2024-04-30T17:58:02: %SCRIPT-INFO: MAC access list copp-system-p-acl-mac-dot1x
+2024-04-30T17:58:02: %SCRIPT-INFO:         10 permit any 0180.c200.0003 0000.0000.0000 0x888e 
+2024-04-30T17:58:02: %SCRIPT-INFO: MAC access list copp-system-p-acl-mac-fcoe
+2024-04-30T17:58:02: %SCRIPT-INFO:         10 permit any any 0x8906 
+2024-04-30T17:58:02: %SCRIPT-INFO:         20 permit any any 0x8914 
+2024-04-30T17:58:02: %SCRIPT-INFO: MAC access list copp-system-p-acl-mac-l2-tunnel
+2024-04-30T17:58:02: %SCRIPT-INFO:         10 permit any any 0x8840 
+2024-04-30T17:58:02: %SCRIPT-INFO: MAC access list copp-system-p-acl-mac-l3-isis
+2024-04-30T17:58:02: %SCRIPT-INFO:         10 permit any 0180.c200.0015 0000.0000.0000 
+2024-04-30T17:58:02: %SCRIPT-INFO:         20 permit any 0180.c200.0014 0000.0000.0000 
+2024-04-30T17:58:02: %SCRIPT-INFO:         30 permit any 0900.2b00.0005 0000.0000.0000 
+2024-04-30T17:58:02: %SCRIPT-INFO:         40 permit any 0900.2b00.0004 0000.0000.0000 
+2024-04-30T17:58:02: %SCRIPT-INFO: MAC access list copp-system-p-acl-mac-lacp
+2024-04-30T17:58:02: %SCRIPT-INFO:         10 permit any 0180.c200.0002 0000.0000.0000 0x8809 
+2024-04-30T17:58:02: %SCRIPT-INFO: MAC access list copp-system-p-acl-mac-lldp
+2024-04-30T17:58:02: %SCRIPT-INFO:         10 permit any 0180.c200.000e 0000.0000.0000 0x88cc 
+2024-04-30T17:58:02: %SCRIPT-INFO: MAC access list copp-system-p-acl-mac-sdp-srp
+2024-04-30T17:58:02: %SCRIPT-INFO:         10 permit any 0180.c200.000e 0000.0000.0000 0x3401 
+2024-04-30T17:58:02: %SCRIPT-INFO: MAC access list copp-system-p-acl-mac-stp
+2024-04-30T17:58:02: %SCRIPT-INFO:         10 permit any 0100.0ccc.cccd 0000.0000.0000 
+2024-04-30T17:58:02: %SCRIPT-INFO:         20 permit any 0180.c200.0000 0000.0000.0000 
+2024-04-30T17:58:02: %SCRIPT-INFO: MAC access list copp-system-p-acl-mac-undesirable
+2024-04-30T17:58:02: %SCRIPT-INFO:         10 permit any any 
+2024-04-30T17:58:02: %SCRIPT-INFO: IPv6 access list copp-system-p-acl-mld
+2024-04-30T17:58:02: %SCRIPT-INFO:         10 permit icmp any any mld-query 
+2024-04-30T17:58:02: %SCRIPT-INFO:         20 permit icmp any any mld-report 
+2024-04-30T17:58:02: %SCRIPT-INFO:         30 permit icmp any any mld-reduction 
+2024-04-30T17:58:02: %SCRIPT-INFO:         40 permit icmp any any mldv2 
+2024-04-30T17:58:02: %SCRIPT-INFO: IP access list copp-system-p-acl-msdp
+2024-04-30T17:58:02: %SCRIPT-INFO:         10 permit tcp any gt 1023 any eq 639 
+2024-04-30T17:58:02: %SCRIPT-INFO:         20 permit tcp any eq 639 any gt 1023 
+2024-04-30T17:58:02: %SCRIPT-INFO: IPv6 access list copp-system-p-acl-ndp
+2024-04-30T17:58:02: %SCRIPT-INFO:         10 permit icmp any any router-solicitation 
+2024-04-30T17:58:02: %SCRIPT-INFO:         20 permit icmp any any router-advertisement 
+2024-04-30T17:58:02: %SCRIPT-INFO:         30 permit icmp any any nd-ns 
+2024-04-30T17:58:02: %SCRIPT-INFO:         40 permit icmp any any nd-na 
+2024-04-30T17:58:02: %SCRIPT-INFO: IP access list copp-system-p-acl-ntp
+2024-04-30T17:58:02: %SCRIPT-INFO:         10 permit udp any any eq ntp 
+2024-04-30T17:58:02: %SCRIPT-INFO:         20 permit udp any eq ntp any 
+2024-04-30T17:58:02: %SCRIPT-INFO: IPv6 access list copp-system-p-acl-ntp6
+2024-04-30T17:58:02: %SCRIPT-INFO:         10 permit udp any any eq ntp 
+2024-04-30T17:58:02: %SCRIPT-INFO:         20 permit udp any eq ntp any 
+2024-04-30T17:58:02: %SCRIPT-INFO: IP access list copp-system-p-acl-openflow
+2024-04-30T17:58:02: %SCRIPT-INFO:         10 permit tcp any eq 6653 any 
+2024-04-30T17:58:02: %SCRIPT-INFO: IP access list copp-system-p-acl-ospf
+2024-04-30T17:58:02: %SCRIPT-INFO:         10 permit ospf any any 
+2024-04-30T17:58:02: %SCRIPT-INFO: IPv6 access list copp-system-p-acl-ospf6
+2024-04-30T17:58:02: %SCRIPT-INFO:         10 permit 89 any any 
+2024-04-30T17:58:02: %SCRIPT-INFO: IP access list copp-system-p-acl-pim
+2024-04-30T17:58:02: %SCRIPT-INFO:         10 permit pim any 224.0.0.0/24 
+2024-04-30T17:58:02: %SCRIPT-INFO:         20 permit udp any any eq pim-auto-rp 
+2024-04-30T17:58:02: %SCRIPT-INFO:         30 permit ip any 224.0.0.13/32 
+2024-04-30T17:58:02: %SCRIPT-INFO: IP access list copp-system-p-acl-pim-mdt-join
+2024-04-30T17:58:02: %SCRIPT-INFO:         10 permit udp any 224.0.0.13/32 
+2024-04-30T17:58:02: %SCRIPT-INFO: IP access list copp-system-p-acl-pim-reg
+2024-04-30T17:58:02: %SCRIPT-INFO:         10 permit pim any any 
+2024-04-30T17:58:02: %SCRIPT-INFO: IPv6 access list copp-system-p-acl-pim6
+2024-04-30T17:58:02: %SCRIPT-INFO:         10 permit pim any ff02::d/128 
+2024-04-30T17:58:02: %SCRIPT-INFO:         20 permit udp any any eq pim-auto-rp 
+2024-04-30T17:58:02: %SCRIPT-INFO: IPv6 access list copp-system-p-acl-pim6-reg
+2024-04-30T17:58:02: %SCRIPT-INFO:         10 permit pim any any 
+2024-04-30T17:58:02: %SCRIPT-INFO: IP access list copp-system-p-acl-ptp
+2024-04-30T17:58:02: %SCRIPT-INFO:         10 permit udp any 224.0.1.129/32 eq 319 
+2024-04-30T17:58:02: %SCRIPT-INFO:         20 permit udp any 224.0.1.129/32 eq 320 
+2024-04-30T17:58:02: %SCRIPT-INFO: MAC access list copp-system-p-acl-ptp-l2
+2024-04-30T17:58:02: %SCRIPT-INFO:         10 permit any any 0x88f7 
+2024-04-30T17:58:02: %SCRIPT-INFO: IP access list copp-system-p-acl-ptp-uc
+2024-04-30T17:58:02: %SCRIPT-INFO:         10 permit udp any any eq 319 
+2024-04-30T17:58:02: %SCRIPT-INFO:         20 permit udp any any eq 320 
+2024-04-30T17:58:02: %SCRIPT-INFO: IP access list copp-system-p-acl-radius
+2024-04-30T17:58:02: %SCRIPT-INFO:         10 permit udp any any eq 1812 
+2024-04-30T17:58:02: %SCRIPT-INFO:         20 permit udp any any eq 1813 
+2024-04-30T17:58:02: %SCRIPT-INFO:         30 permit udp any any eq 1645 
+2024-04-30T17:58:02: %SCRIPT-INFO:         40 permit udp any any eq 1646 
+2024-04-30T17:58:02: %SCRIPT-INFO:         50 permit udp any eq 1812 any 
+2024-04-30T17:58:02: %SCRIPT-INFO:         60 permit udp any eq 1813 any 
+2024-04-30T17:58:02: %SCRIPT-INFO:         70 permit udp any eq 1645 any 
+2024-04-30T17:58:02: %SCRIPT-INFO:         80 permit udp any eq 1646 any 
+2024-04-30T17:58:02: %SCRIPT-INFO: IPv6 access list copp-system-p-acl-radius6
+2024-04-30T17:58:02: %SCRIPT-INFO:         10 permit udp any any eq 1812 
+2024-04-30T17:58:02: %SCRIPT-INFO:         20 permit udp any any eq 1813 
+2024-04-30T17:58:02: %SCRIPT-INFO:         30 permit udp any any eq 1645 
+2024-04-30T17:58:02: %SCRIPT-INFO:         40 permit udp any any eq 1646 
+2024-04-30T17:58:02: %SCRIPT-INFO:         50 permit udp any eq 1812 any 
+2024-04-30T17:58:02: %SCRIPT-INFO:         60 permit udp any eq 1813 any 
+2024-04-30T17:58:02: %SCRIPT-INFO:         70 permit udp any eq 1645 any 
+2024-04-30T17:58:02: %SCRIPT-INFO:         80 permit udp any eq 1646 any 
+2024-04-30T17:58:02: %SCRIPT-INFO: IP access list copp-system-p-acl-rip
+2024-04-30T17:58:02: %SCRIPT-INFO:         10 permit udp any 224.0.0.0/24 eq rip 
+2024-04-30T17:58:02: %SCRIPT-INFO: IPv6 access list copp-system-p-acl-rip6
+2024-04-30T17:58:02: %SCRIPT-INFO:         10 permit udp any ff02::9/64 eq 521 
+2024-04-30T17:58:02: %SCRIPT-INFO: IP access list copp-system-p-acl-sftp
+2024-04-30T17:58:02: %SCRIPT-INFO:         10 permit tcp any any eq 115 
+2024-04-30T17:58:02: %SCRIPT-INFO:         20 permit tcp any eq 115 any 
+2024-04-30T17:58:02: %SCRIPT-INFO: IP access list copp-system-p-acl-snmp
+2024-04-30T17:58:02: %SCRIPT-INFO:         10 permit udp any any eq snmp 
+2024-04-30T17:58:02: %SCRIPT-INFO:         20 permit udp any any eq snmptrap 
+2024-04-30T17:58:02: %SCRIPT-INFO:         30 permit tcp any any eq 161 
+2024-04-30T17:58:02: %SCRIPT-INFO:         40 permit tcp any any eq 162 
+2024-04-30T17:58:02: %SCRIPT-INFO: IPv6 access list copp-system-p-acl-snmp6
+2024-04-30T17:58:02: %SCRIPT-INFO:         10 permit udp any any eq snmp 
+2024-04-30T17:58:02: %SCRIPT-INFO:         20 permit udp any any eq snmptrap 
+2024-04-30T17:58:02: %SCRIPT-INFO:         30 permit tcp any any eq 161 
+2024-04-30T17:58:02: %SCRIPT-INFO:         40 permit tcp any any eq 162 
+2024-04-30T17:58:02: %SCRIPT-INFO: IP access list copp-system-p-acl-ssh
+2024-04-30T17:58:02: %SCRIPT-INFO:         10 permit tcp any any eq 22 
+2024-04-30T17:58:02: %SCRIPT-INFO:         20 permit tcp any eq 22 any 
+2024-04-30T17:58:02: %SCRIPT-INFO: IPv6 access list copp-system-p-acl-ssh6
+2024-04-30T17:58:02: %SCRIPT-INFO:         10 permit tcp any any eq 22 
+2024-04-30T17:58:02: %SCRIPT-INFO:         20 permit tcp any eq 22 any 
+2024-04-30T17:58:02: %SCRIPT-INFO: IP access list copp-system-p-acl-tacacs
+2024-04-30T17:58:02: %SCRIPT-INFO:         10 permit tcp any any eq tacacs 
+2024-04-30T17:58:02: %SCRIPT-INFO:         20 permit tcp any eq tacacs any 
+2024-04-30T17:58:02: %SCRIPT-INFO: IPv6 access list copp-system-p-acl-tacacs6
+2024-04-30T17:58:02: %SCRIPT-INFO:         10 permit tcp any any eq tacacs 
+2024-04-30T17:58:02: %SCRIPT-INFO:         20 permit tcp any eq tacacs any 
+2024-04-30T17:58:02: %SCRIPT-INFO: IP access list copp-system-p-acl-telnet
+2024-04-30T17:58:02: %SCRIPT-INFO:         10 permit tcp any any eq telnet 
+2024-04-30T17:58:02: %SCRIPT-INFO:         20 permit tcp any any eq 107 
+2024-04-30T17:58:02: %SCRIPT-INFO:         30 permit tcp any eq telnet any 
+2024-04-30T17:58:02: %SCRIPT-INFO:         40 permit tcp any eq 107 any 
+2024-04-30T17:58:02: %SCRIPT-INFO: IPv6 access list copp-system-p-acl-telnet6
+2024-04-30T17:58:02: %SCRIPT-INFO:         10 permit tcp any any eq telnet 
+2024-04-30T17:58:02: %SCRIPT-INFO:         20 permit tcp any any eq 107 
+2024-04-30T17:58:02: %SCRIPT-INFO:         30 permit tcp any eq telnet any 
+2024-04-30T17:58:02: %SCRIPT-INFO:         40 permit tcp any eq 107 any 
+2024-04-30T17:58:02: %SCRIPT-INFO: IP access list copp-system-p-acl-tftp
+2024-04-30T17:58:02: %SCRIPT-INFO:         10 permit udp any any eq tftp 
+2024-04-30T17:58:02: %SCRIPT-INFO:         20 permit udp any any eq 1758 
+2024-04-30T17:58:02: %SCRIPT-INFO:         30 permit udp any eq tftp any 
+2024-04-30T17:58:02: %SCRIPT-INFO:         40 permit udp any eq 1758 any 
+2024-04-30T17:58:02: %SCRIPT-INFO: IPv6 access list copp-system-p-acl-tftp6
+2024-04-30T17:58:02: %SCRIPT-INFO:         10 permit udp any any eq tftp 
+2024-04-30T17:58:02: %SCRIPT-INFO:         20 permit udp any any eq 1758 
+2024-04-30T17:58:02: %SCRIPT-INFO:         30 permit udp any eq tftp any 
+2024-04-30T17:58:02: %SCRIPT-INFO:         40 permit udp any eq 1758 any 
+2024-04-30T17:58:02: %SCRIPT-INFO: IP access list copp-system-p-acl-traceroute
+2024-04-30T17:58:02: %SCRIPT-INFO:         10 permit icmp any any ttl-exceeded 
+2024-04-30T17:58:02: %SCRIPT-INFO:         20 permit icmp any any port-unreachable 
+2024-04-30T17:58:02: %SCRIPT-INFO:         30 permit udp any any range 33434 33534 
+2024-04-30T17:58:02: %SCRIPT-INFO: IP access list copp-system-p-acl-undesirable
+2024-04-30T17:58:02: %SCRIPT-INFO:         10 permit udp any any eq 1434 
+2024-04-30T17:58:02: %SCRIPT-INFO: IP access list copp-system-p-acl-vpc
+2024-04-30T17:58:02: %SCRIPT-INFO:         10 permit udp any any eq 3200 
+2024-04-30T17:58:02: %SCRIPT-INFO: IP access list copp-system-p-acl-vrrp
+2024-04-30T17:58:02: %SCRIPT-INFO:         10 permit ip any 224.0.0.18/32 
+2024-04-30T17:58:02: %SCRIPT-INFO: IPv6 access list copp-system-p-acl-vrrp6
+2024-04-30T17:58:02: %SCRIPT-INFO:         10 permit ipv6 any ff02::12/128
+2024-04-30T17:58:02: %SCRIPT-INFO: acl named acl123 not configured on device
+2024-04-30T17:58:02: %AETEST-INFO: Passed reason: Success: acl acl123 not configured on device and on interface successfully
+2024-04-30T17:58:02: %AETEST-INFO: The result of section check_acl__not_configured is => PASSED
+2024-04-30T17:58:02: %AETEST-INFO: The result of testcase acl_testcase_not_configured is => PASSED
+2024-04-30T17:58:02: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:58:02: %AETEST-INFO: |       Starting testcase acl_testcase_check_acl_configured_on_interface       |
+2024-04-30T17:58:02: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:58:02: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:58:02: %AETEST-INFO: |                   Starting section configure_acl_on_device                   |
+2024-04-30T17:58:02: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:58:02: %SCRIPT-INFO: Configure acl on device1:n9k1
+
+2024-04-30 17:58:02,642: %UNICON-INFO: +++ n9k1(dut1) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k1(config)# ip access-list acl123
+n9k1(config-acl)#  deny icmp 192.168.11.1/24 any
+n9k1(config-acl)# end
+n9k1# 
+2024-04-30T17:58:03: %SCRIPT-INFO: Configure acl in interface
+
+2024-04-30 17:58:03,357: %UNICON-INFO: +++ n9k1(dut1) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k1(config)# int ethernet1/5 
+n9k1(config-if)#  ip access-group acl123 in
+n9k1(config-if)# end
+n9k1# 
+2024-04-30T17:58:04: %AETEST-INFO: The result of section configure_acl_on_device is => PASSED
+2024-04-30T17:58:04: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:58:04: %AETEST-INFO: |            Starting section check_acl_not_configured_on_interface            |
+2024-04-30T17:58:04: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:58:04: %SCRIPT-INFO: Check acl configured on interface
+
+2024-04-30 17:58:04,306: %UNICON-INFO: +++ n9k1 with via 'cli': executing command 'show running-config interface ethernet1/5' +++
+show running-config interface ethernet1/5
+
+!Command: show running-config interface Ethernet1/5
+!Running configuration last done at: Tue Apr 30 11:09:03 2024
+!Time: Tue Apr 30 11:09:04 2024
+
+version 9.3(13) Bios:version 07.17 
+
+interface Ethernet1/5
+  no switchport
+  ip access-group acl123 in
+  ip address 192.168.60.1/24
+  no shutdown
+
+n9k1# 
+2024-04-30T17:58:04: %SCRIPT-INFO: 
+2024-04-30T17:58:04: %SCRIPT-INFO: !Command: show running-config interface Ethernet1/5
+2024-04-30T17:58:04: %SCRIPT-INFO: !Running configuration last done at: Tue Apr 30 11:09:03 2024
+2024-04-30T17:58:04: %SCRIPT-INFO: !Time: Tue Apr 30 11:09:04 2024
+2024-04-30T17:58:04: %SCRIPT-INFO: 
+2024-04-30T17:58:04: %SCRIPT-INFO: version 9.3(13) Bios:version 07.17 
+2024-04-30T17:58:04: %SCRIPT-INFO: 
+2024-04-30T17:58:04: %SCRIPT-INFO: interface Ethernet1/5
+2024-04-30T17:58:04: %SCRIPT-INFO:   no switchport
+2024-04-30T17:58:04: %SCRIPT-INFO:   ip access-group acl123 in
+2024-04-30T17:58:04: %SCRIPT-INFO:   ip address 192.168.60.1/24
+2024-04-30T17:58:04: %SCRIPT-INFO:   no shutdown
+2024-04-30T17:58:04: %SCRIPT-INFO: acl named acl123 not configured on interface ethernet1/5
+2024-04-30T17:58:04: %AETEST-INFO: Passed reason: Success: acl acl123 not configured on interface ethernet1/5 of device n9k1
+2024-04-30T17:58:04: %AETEST-INFO: The result of section check_acl_not_configured_on_interface is => PASSED
+2024-04-30T17:58:04: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:58:04: %AETEST-INFO: |                  Starting section unconfigure_acl_on_device                  |
+2024-04-30T17:58:04: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:58:04: %SCRIPT-INFO: Unconfigure acl in interface
+
+2024-04-30 17:58:04,526: %UNICON-INFO: +++ n9k1(dut1) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k1(config)# int ethernet1/5 
+n9k1(config-if)#  no ip access-group acl123 in
+n9k1(config-if)# end
+n9k1# 
+2024-04-30T17:58:05: %SCRIPT-INFO: Unconfigure acl on device3:n9k1
+
+2024-04-30 17:58:05,220: %UNICON-INFO: +++ n9k1(dut1) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k1(config)# no ip access-list acl123
+n9k1(config)# end
+n9k1# 
+2024-04-30T17:58:05: %AETEST-INFO: The result of section unconfigure_acl_on_device is => PASSED
+2024-04-30T17:58:05: %AETEST-INFO: The result of testcase acl_testcase_check_acl_configured_on_interface is => PASSED
+2024-04-30T17:58:05: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:58:05: %AETEST-INFO: |     Starting testcase acl_testcase_check_acl_not_configured_on_interface     |
+2024-04-30T17:58:05: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:58:05: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:58:05: %AETEST-INFO: |                   Starting section configure_acl_on_device                   |
+2024-04-30T17:58:05: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:58:05: %SCRIPT-INFO: Configure acl on device1:n9k1
+
+2024-04-30 17:58:05,743: %UNICON-INFO: +++ n9k1(dut1) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k1(config)# ip access-list acl123
+n9k1(config-acl)#  deny icmp 192.168.11.1/24 any
+n9k1(config-acl)# end
+n9k1# 
+2024-04-30T17:58:06: %AETEST-INFO: The result of section configure_acl_on_device is => PASSED
+2024-04-30T17:58:06: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:58:06: %AETEST-INFO: |            Starting section check_acl_not_configured_on_interface            |
+2024-04-30T17:58:06: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:58:06: %SCRIPT-INFO: Check acl not configured on interface
+
+2024-04-30 17:58:06,626: %UNICON-INFO: +++ n9k1 with via 'cli': executing command 'show running-config interface ethernet1/5' +++
+show running-config interface ethernet1/5
+
+!Command: show running-config interface Ethernet1/5
+!Running configuration last done at: Tue Apr 30 11:09:05 2024
+!Time: Tue Apr 30 11:09:06 2024
+
+version 9.3(13) Bios:version 07.17 
+
+interface Ethernet1/5
+  no switchport
+  ip address 192.168.60.1/24
+  no shutdown
+
+n9k1# 
+2024-04-30T17:58:06: %SCRIPT-INFO: 
+2024-04-30T17:58:06: %SCRIPT-INFO: !Command: show running-config interface Ethernet1/5
+2024-04-30T17:58:06: %SCRIPT-INFO: !Running configuration last done at: Tue Apr 30 11:09:05 2024
+2024-04-30T17:58:06: %SCRIPT-INFO: !Time: Tue Apr 30 11:09:06 2024
+2024-04-30T17:58:06: %SCRIPT-INFO: 
+2024-04-30T17:58:06: %SCRIPT-INFO: version 9.3(13) Bios:version 07.17 
+2024-04-30T17:58:06: %SCRIPT-INFO: 
+2024-04-30T17:58:06: %SCRIPT-INFO: interface Ethernet1/5
+2024-04-30T17:58:06: %SCRIPT-INFO:   no switchport
+2024-04-30T17:58:06: %SCRIPT-INFO:   ip address 192.168.60.1/24
+2024-04-30T17:58:06: %SCRIPT-INFO:   no shutdown
+2024-04-30T17:58:06: %SCRIPT-INFO: acl named acl123 not configured on interface ethernet1/5
+2024-04-30T17:58:06: %AETEST-INFO: Passed reason: Success: acl acl123 not configured on interface ethernet1/5 of device n9k1
+2024-04-30T17:58:06: %AETEST-INFO: The result of section check_acl_not_configured_on_interface is => PASSED
+2024-04-30T17:58:06: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:58:06: %AETEST-INFO: |                  Starting section unconfigure_acl_on_device                  |
+2024-04-30T17:58:06: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:58:06: %SCRIPT-INFO: Unconfigure acl on device3:n9k1
+
+2024-04-30 17:58:06,839: %UNICON-INFO: +++ n9k1(dut1) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k1(config)# no ip access-list acl123
+n9k1(config)# end
+n9k1# 
+2024-04-30T17:58:07: %AETEST-INFO: The result of section unconfigure_acl_on_device is => PASSED
+2024-04-30T17:58:07: %AETEST-INFO: The result of testcase acl_testcase_check_acl_not_configured_on_interface is => PASSED
+2024-04-30T17:58:07: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:58:07: %AETEST-INFO: |                           Starting common cleanup                            |
+2024-04-30T17:58:07: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:58:07: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:58:07: %AETEST-INFO: |                Starting subsection unconfigure_rip_on_devices                |
+2024-04-30T17:58:07: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:58:07: %SCRIPT-INFO: Unconfigure rip on interfaces
+
+2024-04-30 17:58:07,406: %UNICON-INFO: +++ n9k1(dut1) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k1(config)# int ethernet1/5
+n9k1(config-if)#  no router rip 2
+n9k1(config)#  end
+n9k1# 
+
+2024-04-30 17:58:11,478: %UNICON-INFO: +++ n9k3(dut3) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k3(config)# int ethernet1/5
+n9k3(config-if)#  no router rip 2
+n9k3(config)#  end
+n9k3# 
+
+2024-04-30 17:58:15,497: %UNICON-INFO: +++ n9k3(dut3) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k3(config)# int ethernet1/9
+n9k3(config-if)#  no router rip 2
+n9k3(config)#  end
+n9k3# 
+
+2024-04-30 17:58:19,186: %UNICON-INFO: +++ n9k4(dut2) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k4(config)# int ethernet1/9
+n9k4(config-if)#  no router rip 2
+n9k4(config)#  end
+n9k4# 
+2024-04-30T17:58:23: %AETEST-INFO: The result of subsection unconfigure_rip_on_devices is => PASSED
+2024-04-30T17:58:23: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:58:23: %AETEST-INFO: |                  Starting subsection disable_rip_on_device                   |
+2024-04-30T17:58:23: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:58:23: %ROOT-INFO: disable rip on devices
+
+2024-04-30 17:58:23,245: %UNICON-INFO: +++ n9k1(dut1) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k1(config)# no feature rip
+n9k1(config)#  end
+n9k1# 
+
+2024-04-30 17:58:26,891: %UNICON-INFO: +++ n9k3(dut3) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k3(config)# no feature rip
+n9k3(config)#  end
+n9k3# 
+
+2024-04-30 17:58:30,552: %UNICON-INFO: +++ n9k4(dut2) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k4(config)# no feature rip
+n9k4(config)#  end
+n9k4# 
+2024-04-30T17:58:34: %AETEST-INFO: The result of subsection disable_rip_on_device is => PASSED
+2024-04-30T17:58:34: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:58:34: %AETEST-INFO: |               Starting subsection unconfigure_ipaddress_device               |
+2024-04-30T17:58:34: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:58:34: %ROOT-INFO: Unconfig ip address on interfaces of all devices
+
+2024-04-30 17:58:34,180: %UNICON-INFO: +++ n9k1(dut1) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k1(config)# int ethernet1/5
+n9k1(config-if)#  no ip address
+n9k1(config-if)#  end
+n9k1# 
+
+2024-04-30 17:58:37,907: %UNICON-INFO: +++ n9k3(dut3) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k3(config)# int ethernet1/5
+n9k3(config-if)#  no ip address
+n9k3(config-if)#  end
+n9k3# 
+
+2024-04-30 17:58:41,574: %UNICON-INFO: +++ n9k3(dut3) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k3(config)# int ethernet1/9
+n9k3(config-if)#  no ip address
+n9k3(config-if)#  end
+n9k3# 
+
+2024-04-30 17:58:45,180: %UNICON-INFO: +++ n9k4(dut2) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k4(config)# int ethernet1/9
+n9k4(config-if)#  no ip address
+n9k4(config-if)#  end
+n9k4# 
+2024-04-30T17:58:48: %AETEST-INFO: The result of subsection unconfigure_ipaddress_device is => PASSED
+2024-04-30T17:58:48: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:58:48: %AETEST-INFO: |                        Starting subsection disconnect                        |
+2024-04-30T17:58:48: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:58:48: %SCRIPT-INFO: Disconnect the devices
+2024-04-30T17:59:21: %AETEST-INFO: The result of subsection disconnect is => PASSED
+2024-04-30T17:59:21: %AETEST-INFO: The result of common cleanup is => PASSED
+2024-04-30T17:59:21: %CONTRIB-INFO: WebEx Token not given as argument or in config. No WebEx notification will be sent
+2024-04-30T17:59:21: %EASYPY-INFO: --------------------------------------------------------------------------------
+2024-04-30T17:59:21: %EASYPY-INFO: Job finished. Wrapping up...
+2024-04-30T17:59:22: %EASYPY-INFO: Creating archive file: /home/tcs/.pyats/archive/24-04/acl_job.2024Apr30_17:54:23.978840.zip
+2024-04-30T17:59:22: %EASYPY-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:59:22: %EASYPY-INFO: |                                Easypy Report                                 |
+2024-04-30T17:59:22: %EASYPY-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:59:22: %EASYPY-INFO: pyATS Instance   : /usr
+2024-04-30T17:59:22: %EASYPY-INFO: Python Version   : cpython-3.8.9 (64bit)
+2024-04-30T17:59:22: %EASYPY-INFO: CLI Arguments    : /home/tcs/.local/bin/pyats run job acl_job.py --testbed-file testbed.yaml
+2024-04-30T17:59:22: %EASYPY-INFO: User             : tcs
+2024-04-30T17:59:22: %EASYPY-INFO: Host Server      : 01HW896031
+2024-04-30T17:59:22: %EASYPY-INFO: Host OS Version  : Ubuntu 16.04 xenial (x86_64)
+2024-04-30T17:59:22: %EASYPY-INFO: 
+2024-04-30T17:59:22: %EASYPY-INFO: Job Information
+2024-04-30T17:59:22: %EASYPY-INFO:     Name         : acl_job
+2024-04-30T17:59:22: %EASYPY-INFO:     Start time   : 2024-04-30 17:54:27.386895+05:30
+2024-04-30T17:59:22: %EASYPY-INFO:     Stop time    : 2024-04-30 17:59:21.891516+05:30
+2024-04-30T17:59:22: %EASYPY-INFO:     Elapsed time : 0:04:55
+2024-04-30T17:59:22: %EASYPY-INFO:     Archive      : /home/tcs/.pyats/archive/24-04/acl_job.2024Apr30_17:54:23.978840.zip
+2024-04-30T17:59:22: %EASYPY-INFO: 
+2024-04-30T17:59:22: %EASYPY-INFO: Total Tasks    : 1 
+2024-04-30T17:59:22: %EASYPY-INFO: 
+2024-04-30T17:59:22: %EASYPY-INFO: Overall Stats
+2024-04-30T17:59:22: %EASYPY-INFO:     Passed     : 10
+2024-04-30T17:59:22: %EASYPY-INFO:     Passx      : 0
+2024-04-30T17:59:22: %EASYPY-INFO:     Failed     : 0
+2024-04-30T17:59:22: %EASYPY-INFO:     Aborted    : 0
+2024-04-30T17:59:22: %EASYPY-INFO:     Blocked    : 0
+2024-04-30T17:59:22: %EASYPY-INFO:     Skipped    : 0
+2024-04-30T17:59:22: %EASYPY-INFO:     Errored    : 0
+2024-04-30T17:59:22: %EASYPY-INFO: 
+2024-04-30T17:59:22: %EASYPY-INFO:     TOTAL      : 10
+2024-04-30T17:59:22: %EASYPY-INFO: 
+2024-04-30T17:59:22: %EASYPY-INFO: Success Rate   : 100.00 %
+2024-04-30T17:59:22: %EASYPY-INFO: 
+2024-04-30T17:59:22: %EASYPY-INFO: Section Stats
+2024-04-30T17:59:22: %EASYPY-INFO:     Passed     : 31
+2024-04-30T17:59:22: %EASYPY-INFO:     Passx      : 0
+2024-04-30T17:59:22: %EASYPY-INFO:     Failed     : 0
+2024-04-30T17:59:22: %EASYPY-INFO:     Aborted    : 0
+2024-04-30T17:59:22: %EASYPY-INFO:     Blocked    : 0
+2024-04-30T17:59:22: %EASYPY-INFO:     Skipped    : 0
+2024-04-30T17:59:22: %EASYPY-INFO:     Errored    : 0
+2024-04-30T17:59:22: %EASYPY-INFO: 
+2024-04-30T17:59:22: %EASYPY-INFO:     TOTAL      : 31
+2024-04-30T17:59:22: %EASYPY-INFO: 
+2024-04-30T17:59:22: %EASYPY-INFO: Section Success Rate   : 100.00 %
+2024-04-30T17:59:22: %EASYPY-INFO: 
+2024-04-30T17:59:22: %EASYPY-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:59:22: %EASYPY-INFO: |                             Task Result Summary                              |
+2024-04-30T17:59:22: %EASYPY-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:59:22: %EASYPY-INFO: Task-1: acl_testcases.common_setup                                        PASSED
+2024-04-30T17:59:22: %EASYPY-INFO: Task-1: acl_testcases.acl_testcase_permit                                 PASSED
+2024-04-30T17:59:22: %EASYPY-INFO: Task-1: acl_testcases.acl_testcase_deny                                   PASSED
+2024-04-30T17:59:22: %EASYPY-INFO: Task-1: acl_testcases.acl_testcase_multiple_rules                         PASSED
+2024-04-30T17:59:22: %EASYPY-INFO: Task-1: acl_testcases.acl_testcase_in_out_bound                           PASSED
+2024-04-30T17:59:22: %EASYPY-INFO: Task-1: acl_testcases.acl_testcase_configured                             PASSED
+2024-04-30T17:59:22: %EASYPY-INFO: Task-1: acl_testcases.acl_testcase_not_configured                         PASSED
+2024-04-30T17:59:22: %EASYPY-INFO: Task-1: acl_testcases.acl_testcase_check_acl_configured_on_interface      PASSED
+2024-04-30T17:59:22: %EASYPY-INFO: Task-1: acl_testcases.acl_testcase_check_acl_not_configured_on_inte...    PASSED
+2024-04-30T17:59:22: %EASYPY-INFO: Task-1: acl_testcases.common_cleanup                                      PASSED
+2024-04-30T17:59:22: %EASYPY-INFO: 
+2024-04-30T17:59:22: %EASYPY-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:59:22: %EASYPY-INFO: |                             Task Result Details                              |
+2024-04-30T17:59:22: %EASYPY-INFO: +------------------------------------------------------------------------------+
+2024-04-30T17:59:22: %EASYPY-INFO: Task-1: acl_testcases
+2024-04-30T17:59:22: %EASYPY-INFO: |-- common_setup                                                          PASSED
+2024-04-30T17:59:22: %EASYPY-INFO: |   |-- print_testbed_information                                         PASSED
+2024-04-30T17:59:22: %EASYPY-INFO: |   |-- connect_to_devices                                                PASSED
+2024-04-30T17:59:22: %EASYPY-INFO: |   |-- configure_ip_address_to_interfaces                                PASSED
+2024-04-30T17:59:22: %EASYPY-INFO: |   |-- enable_rip_on_device                                              PASSED
+2024-04-30T17:59:22: %EASYPY-INFO: |   `-- configure_rip_on_devices                                          PASSED
+2024-04-30T17:59:22: %EASYPY-INFO: |-- acl_testcase_permit                                                   PASSED
+2024-04-30T17:59:22: %EASYPY-INFO: |   |-- configure_acl_on_device                                           PASSED
+2024-04-30T17:59:22: %EASYPY-INFO: |   |-- check_ping_after_permit_acl                                       PASSED
+2024-04-30T17:59:22: %EASYPY-INFO: |   `-- unconfigure_acl_on_device                                         PASSED
+2024-04-30T17:59:22: %EASYPY-INFO: |-- acl_testcase_deny                                                     PASSED
+2024-04-30T17:59:22: %EASYPY-INFO: |   |-- configure_acl_on_device                                           PASSED
+2024-04-30T17:59:22: %EASYPY-INFO: |   |-- check_ping_after_deny_acl                                         PASSED
+2024-04-30T17:59:22: %EASYPY-INFO: |   `-- unconfigure_acl_on_device                                         PASSED
+2024-04-30T17:59:22: %EASYPY-INFO: |-- acl_testcase_multiple_rules                                           PASSED
+2024-04-30T17:59:22: %EASYPY-INFO: |   |-- configure_acl_on_device                                           PASSED
+2024-04-30T17:59:22: %EASYPY-INFO: |   |-- check_ping_after_multiple_acl_rules                               PASSED
+2024-04-30T17:59:22: %EASYPY-INFO: |   `-- unconfigure_acl_on_device                                         PASSED
+2024-04-30T17:59:22: %EASYPY-INFO: |-- acl_testcase_in_out_bound                                             PASSED
+2024-04-30T17:59:22: %EASYPY-INFO: |   |-- configure_acl_on_device                                           PASSED
+2024-04-30T17:59:22: %EASYPY-INFO: |   |-- check_ping_after_in_out_bound_acl                                 PASSED
+2024-04-30T17:59:22: %EASYPY-INFO: |   `-- unconfigure_acl_on_device                                         PASSED
+2024-04-30T17:59:22: %EASYPY-INFO: |-- acl_testcase_configured                                               PASSED
+2024-04-30T17:59:22: %EASYPY-INFO: |   |-- configure_acl_on_device                                           PASSED
+2024-04-30T17:59:22: %EASYPY-INFO: |   |-- check_acl_configured                                              PASSED
+2024-04-30T17:59:22: %EASYPY-INFO: |   `-- unconfigure_acl_on_device                                         PASSED
+2024-04-30T17:59:22: %EASYPY-INFO: |-- acl_testcase_not_configured                                           PASSED
+2024-04-30T17:59:22: %EASYPY-INFO: |   `-- check_acl__not_configured                                         PASSED
+2024-04-30T17:59:22: %EASYPY-INFO: |-- acl_testcase_check_acl_configured_on_interface                        PASSED
+2024-04-30T17:59:22: %EASYPY-INFO: |   |-- configure_acl_on_device                                           PASSED
+2024-04-30T17:59:22: %EASYPY-INFO: |   |-- check_acl_not_configured_on_interface                             PASSED
+2024-04-30T17:59:22: %EASYPY-INFO: |   `-- unconfigure_acl_on_device                                         PASSED
+2024-04-30T17:59:22: %EASYPY-INFO: |-- acl_testcase_check_acl_not_configured_on_interface                    PASSED
+2024-04-30T17:59:22: %EASYPY-INFO: |   |-- configure_acl_on_device                                           PASSED
+2024-04-30T17:59:22: %EASYPY-INFO: |   |-- check_acl_not_configured_on_interface                             PASSED
+2024-04-30T17:59:22: %EASYPY-INFO: |   `-- unconfigure_acl_on_device                                         PASSED
+2024-04-30T17:59:22: %EASYPY-INFO: `-- common_cleanup                                                        PASSED
+2024-04-30T17:59:22: %EASYPY-INFO:     |-- unconfigure_rip_on_devices                                        PASSED
+2024-04-30T17:59:22: %EASYPY-INFO:     |-- disable_rip_on_device                                             PASSED
+2024-04-30T17:59:22: %EASYPY-INFO:     |-- unconfigure_ipaddress_device                                      PASSED
+2024-04-30T17:59:22: %EASYPY-INFO:     `-- disconnect                                                        PASSED
+2024-04-30T17:59:22: %EASYPY-INFO: Sending report email...
+2024-04-30T17:59:22: %EASYPY-INFO: Missing SMTP server configuration, or failed to reach/authenticate/send mail. Result notification email failed to send.
+2024-04-30T17:59:23: %EASYPY-INFO: Done!
+
+Pro Tip
+-------
+   Try the following command to view your logs:
+       pyats logs view
+
+Link to open HTML report result : /home/tcs/POC2/PYATS/acl/final_report.html
+Link to view Log results : /home/tcs/POC2/PYATS/acl/final.html
